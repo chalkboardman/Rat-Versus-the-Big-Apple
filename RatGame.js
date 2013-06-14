@@ -20,12 +20,19 @@ function load_text(event) {
 function load_buttons(event) {
 	$("#actions").empty(); //clear out current buttons
 
+	//create button
 	var length = event.exits.length;
 	for (var i = 0; i < length; i++) {
 		var exit = event.exits[i];
-		var button = "<li>" + exit.name + "</li>";
+		var button = "<li><button type='button'>" + exit.name + "</button></li>";
 		$("#actions").append(button);
 	}
+
+	//set event handlers for button
+	$("button").click(function () {
+		var index = $(this).parent().index();
+		console.log("Button index: " + index);
+	});
 }
 
 function load_event(event) {
