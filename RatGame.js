@@ -1,20 +1,24 @@
 function Game() {
 	this.events = new Events();
-	//this.current_event = this.events.start();
+	this.current_event = this.events.start();
 }
 
 Game.prototype.start = function () {
-	//load text
+	//set current event
 	var start_event = this.events.start();
-	this.load_event(start_event);
+	this.current_event = start_event;
+	//load it up onto screen
+	this.load_event();
 }
 
-Game.prototype.load_event = function (event) {
-	this.load_text(event);
-	this.load_buttons(event);
+Game.prototype.load_event = function () {
+	this.load_text();
+	this.load_buttons();
 }
 
-Game.prototype.load_text = function (event) {
+Game.prototype.load_text = function () {
+	var event = this.current_event;
+
 	$("#gametext").empty(); //clear out current game text
 
 	//get new game text
@@ -24,7 +28,8 @@ Game.prototype.load_text = function (event) {
 	$("#gametext").append(new_text);
 }
 
-Game.prototype.load_buttons = function (event) {
+Game.prototype.load_buttons = function () {
+	var event = this.current_event;
 	$("#actions").empty(); //clear out current buttons
 
 	//create button
