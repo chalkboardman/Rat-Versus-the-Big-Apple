@@ -1,13 +1,20 @@
-function start_game() {
-	//load events
-	events = new Events();
-
-	//load text
-	var start_event = events.start();
-	load_event(start_event);
+function Game() {
+	this.events = new Events();
+	//this.current_event = this.events.start();
 }
 
-function load_text(event) {
+Game.prototype.start = function () {
+	//load text
+	var start_event = this.events.start();
+	this.load_event(start_event);
+}
+
+Game.prototype.load_event = function (event) {
+	this.load_text(event);
+	this.load_buttons(event);
+}
+
+Game.prototype.load_text = function (event) {
 	$("#gametext").empty(); //clear out current game text
 
 	//get new game text
@@ -17,7 +24,7 @@ function load_text(event) {
 	$("#gametext").append(new_text);
 }
 
-function load_buttons(event) {
+Game.prototype.load_buttons = function (event) {
 	$("#actions").empty(); //clear out current buttons
 
 	//create button
@@ -32,16 +39,16 @@ function load_buttons(event) {
 	$("button").click(function () {
 		var index = $(this).parent().index();
 		console.log("Button index: " + index);
-	});
-}
 
-function load_event(event) {
-	load_text(event);
-	load_buttons(event);
+		//load new event
+		//current_event = current_event.exits[index];
+		//load_event(current_event);
+	});
 }
 
 $(document).ready(function() {
 	// Handler for .ready() called.
-	start_game();
+	var game = new Game();
+	game.start();
 
 });
