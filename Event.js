@@ -50,11 +50,28 @@ Events.prototype.start = function () {
 
 //this adds connections to each event object, so the object doesn't store IDs
 Events.prototype.set_connection = function (event_id, exit_ids) {
+
 	var exits_as_objects = []; //initialize array
+
+	//loops through exit ids, grabbing appropriate object
+	var length = exit_ids.length;
+	for (var i = 0; i < length; i++) {
+		console.log(exit_ids[i]);
+		exits_as_objects.push(this.get_event_with_id(exit_ids[i]));
+	}
+
+	//set objects
+	this.events[event_id].set_exits(exits_as_objects);
+
+	/*
+	
 	//create an array of 
 	for (var exit_id in exit_ids) {
+		console.log(exit_id);
 		exits_as_objects.push(this.get_event_with_id(exit_id));
 	}
 	
 	this.events[event_id].set_exits(exits_as_objects);
+	*/
+	
 }
