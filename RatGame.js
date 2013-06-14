@@ -40,14 +40,16 @@ Game.prototype.load_buttons = function () {
 		$("#actions").append(button);
 	}
 
+	var game = this; //so we can access game in closure
+
 	//set event handlers for button
 	$("button").click(function () {
 		var index = $(this).parent().index();
 		console.log("Button index: " + index);
 
 		//load new event
-		//current_event = current_event.exits[index];
-		//load_event(current_event);
+		game.current_event = event.exits[index];
+		game.load_event();
 	});
 }
 
