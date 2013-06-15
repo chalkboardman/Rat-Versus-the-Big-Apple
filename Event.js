@@ -25,8 +25,9 @@ function Events() {
 		"<br>Featuring the creative \"talents\" of: " + 
 		"<br>Erin Donohue, Keelee James, and Rae Berg" + 
 		"<br>" + 
-		"<br>Are you ready to explore the city? Well, too bad, cause you're going to. " + 
-		"<br>Type 0 to begin exploring the sewer.", 
+		"<br>Ported to JavaScript by Shawn McDonald" + 
+		"<br>" + 
+		"<br>Are you ready to explore the city? Well, too bad, cause you're going to. ", 
 		[1]);
 
     //1 Wake up in the sewer.
@@ -135,7 +136,7 @@ function Events() {
 		"<br>\"Siddown,\" says the rat leader. \"Relax. Let's have a little chat, and you can tell us all about your little adventures.\" " + 
 		"<br>He trots over to the other rats, who are seated atop a garbage heap." + 
 		"<br>\"Come on and join the party,\" call the rats. You're not entirely sure you want to keep talking to them, but something in their tone suggests you can't really say no.", 
-		[]));
+		[7, 15]));
       //7 Keep talking to the rats.
       this.events.push(new Event("Keep talking to the rats.", "You join the rats on top of the trash heap and try to think of impressive things to say." + 
 		"<br>\"Wait, wait,\" says one of the rats. \"We can't just let this guy hang with us!\" " + 
@@ -150,7 +151,7 @@ function Events() {
 		"<br>What secret signal? You rack your brain, but you can't recall learning any secret signals ever! You knew it was a mistake to get involved with a gang in the first place!" + 
 		"<br>A flurry of potential secret signals rushes to your brain. Should you just do a random handshake and hope it's the secret signal? " + 
 		"<br>Or do you want to wait and see if the rats drop any clues?", 
-		[]));
+		[8, 12]));
       //8 Do nothing for secret signal. (7>8, 0)
       this.events.push(new Event("No idea. Wait and see what they do.", "You have no idea what the signal could possibly be, so you stand around stupidly holding your breath." + 
 		"<br>\"Well?\" says the leader, irritation creeping into his voice." + 
@@ -175,7 +176,7 @@ function Events() {
 		"<br>At the same time, though, you don't want to offend the rats, and it does sound kind of exciting." + 
 		"<br>" + 
 		"<br>What do you want to do?", 
-		[]));
+		[9, 10, 11]));
       //9 You agree to join the Rat Gang.[WIN]
       this.events.push(new Event("You agree to join the rat gang.", "You tell the rats that you are happy to join their gang. " + 
 		"<br>They shriek in a mad joyous frenzy and you guys all get really full on a feast of rotten trash. " + 
@@ -209,7 +210,7 @@ function Events() {
 		"<br>However, you have no idea where you are in the tunnels, and you're not sure which way to go. " + 
 		"<br>The tunnel splits into a fork in front of you." + 
 		"<br>Which way, kiddo? Left or right? Better decide fast, cause the rat gang is right on your tail.", 
-		[]));
+		[13, 14]));
       //13 Try to escape Rat Gang by running left, they corner and kill you. [LOSE]
       this.events.push(new Event("You run left.","You run into a dead end and the rat gang kills you. Too bad." + 
 		"<br>" + 
@@ -222,7 +223,7 @@ function Events() {
 		"<br>You escape the rat gang and run at full speed through the sewer. " + 
 		"<br>You run and run til long after you can't hear the gang anymore. You are now hopelessly lost, but you have no choice but to keep walking." + 
 		"<br>The tunnel starts to smell weird.", 
-		[]));
+		[16]));
       //15 Don't talk to the Rat Gang at all. (6>15, 1) Run into Tunnel Two: Subway (29) (15>29, 0)
       this.events.push(new Event("Run away as fast as you can.", "These rats are too dangerous, so you decide to make a run for it. " + 
 		"<br>Without waiting to hear what they're planning for you, you take off running in the sewer. " + 
@@ -232,7 +233,7 @@ function Events() {
 		"<br>You've escaped the rat gang. " + 
 		"<br>You go deep into the sewer, wander round lots of twists and turns and whatnot and you get pretty tired and very hungry. " + 
 		"<br>As you walk, the tunnel widens considerably and you feel a bit of a breeze.", 
-		[]));
+		[29]));
 
       
       //Tunnel Three: Tunnel With A Weird Smell (Homeless Man)
@@ -252,10 +253,10 @@ function Events() {
 		"<br>\"Hello there!\" he says merrily. You look around for signs of another human, but you're alone. " + 
 		"<br>The homeless man, you realize, is talking to you like you're a person. " + 
 		"<br>This is weird, considering you're not a person.", 
-		[]));
+		[17, 18]));
       //17 Tell the Homeless Man you're a rat.
       this.events.push(new Event("Tell him you're a rat.", "You start to remind the homeless man that you're a rat, not a person, but rats don't speak English, so you stay silent.", 
-		[]));
+		[18]));
       //18 Don't tell the Homeless Man you're a rat.
       this.events.push(new Event("Don't say anything and leave him his simple pleasures.", "\"How's it going?\" the homeless man asks you. " + 
 		"<br>You don't answer. This doesn't stop him from talking, however.  " + 
@@ -273,7 +274,7 @@ function Events() {
 		"<br>you notice that he has a piece of a biscuit in his ragged pants pocket. " + 
 		"<br>The man is swept up in the waves of his own ramblings. That biscuit smells delicious. " + 
 		"<br>And you are really hungry.", 
-		[]));
+		[19, 24]));
 
       //Tunnel Three: Steal food from the Homeless Man?
       //19 Steal the food.
@@ -284,7 +285,7 @@ function Events() {
 		"<br>As he darts around after you, you notice that the man has even more food" + 
 		"<br>--an entire corn muffin--" + 
 		"<br>stashed in his bag in the corner. Want to stay and get the corn muffin or run away while the getting is good?", 
-		[]));
+		[20, 21]));
       //20 Stay around for more food and the Homeless Man kills you. [LOSE]
       this.events.push(new Event("Stick around for more food.", "The homeless man grumbles that it was a really dick move of you to steal food from him, " + 
 		"<br>since he's homeless and all. He smashes you with his foot and kills you." + 
@@ -296,7 +297,7 @@ function Events() {
 		"<br>You hear him calling you, in his creepy homeless-dude-dwelling-in-a-sewer voice, for you to come back. " + 
 		"<br>\"Don't go, don't leave me, little rat. You're my only friend.\" " + 
 		"<br>Kinda pathetic, but also oddly touching.", 
-		[]));
+		[22, 23]));
       //22 Go back to the pleading Homeless Man and he kills you. [LOSE]
       this.events.push(new Event("Go back to the homeless man.", "You return to the homeless man and squeak timidly to him, apologizing for stealing his food. " + 
 		"<br>The homeless man shows no mercy and smashes you with his foot. " + 
@@ -308,7 +309,7 @@ function Events() {
       this.events.push(new Event("Who cares? Keep running.", "Indifferent to human suffering, you race across the sewer's slimy floor, dodging massive puddles of sludge. " + 
 		"<br>You realize that the tunnel is starting to widen, the amount of human and animal waste is decreasing, " + 
 		"<br>and you feel a breeze on your face. You're totally lost at this point, but something exciting seems up ahead.", 
-		[]));
+		[29]));
 
       //Tunnel Three: Credit Card Fraud
       //24 Don't steal food from the Homeless Man.
@@ -334,7 +335,7 @@ function Events() {
 		"<br>But it could also be some quick, easy cash, and it sounds pretty sweet." + 
 		"<br>Want in? " + 
 		"<br>(You communicate via a series of squeaks or something, I dunno.)", 
-		[]));
+		[25, 27, 28]));
       //25 Agree to commit credit card fraud.
       this.events.push(new Event("Hell yeah. Tell the homeless man you're happy to break the law with him.", "The homeless dude is super psyched. " + 
 		"<br>He pumps his fists, grabs you, and puts you on his shoulder." + 
@@ -343,7 +344,7 @@ function Events() {
 		"<br>his long legs running fast, til he comes to a sewer grate. It's been a while since you've been up on the surface, " + 
 		"<br>and you're pretty excited. You and the homeless man climb up the sewer wall and push open the sewer grate, " + 
 		"<br>crawling out into the sunlight.", 
-		[]));
+		[26]));
       //26 Head to the surface with the Homeless Man, you both get arrested. [LOSE]
       this.events.push(new Event("The surface! The surface!", "You feel the warm, blessed light of the sun on your fur. " + 
 		"<br>It is glorious! You are ready to take on the world!" + 
@@ -364,7 +365,7 @@ function Events() {
       this.events.push(new Event("Delicately tell the homeless man you're not really comfortable with the situation, but you wish him luck.", "He grumbles to himself about Jennifer Aniston and falls into a drunken slumber. " + 
 		"<br>You dart away down the sewer, feeling awkward. Maybe you should go back and apologize to the homeless man. " + 
 		"<br>He seems like he's in a bad place.", 
-		[]));
+		[23]));
       //28 Angrily decline to commit credit card fraud and the Homeless Man kills you. [LOSE]
       this.events.push(new Event("Angrily tell the homeless man that credit card fraud is illegal, immoral, and something you want no part of.", "The homeless man, who is already kinda unstable if you haven't noticed, gets upset and kills you." + 
 		"<br>" + 
@@ -379,7 +380,7 @@ function Events() {
       this.events.push(new Event("Onward into the wide tunnel.", "This tunnel is pretty loud. It leads into a subway tunnel. " + 
 		"<br>You wander around on the tracks near a platform when you hear a train coming." + 
 		"<br>Oh snap.", 
-		[]));
+		[30, 31, 32]));
       //30 Face down the train and get crushed. [LOSE]
       this.events.push(new Event("Stand your ground. You're not afraid!", "The train crushes you and you die. " + 
 		"<br>What did you think was going to happen?" + 
@@ -413,7 +414,7 @@ function Events() {
 		"<br>You spot an open bag of chips on the floor on the other side of the car! " + 
 		"<br>You love a good potato chip as much as the next rat, and you're really hungry..." + 
 		"<br>but you also don't want to get caught and cause a scene in the train car.", 
-		[]));
+		[33, 34]));
       //33 Go after the chips. (33>35, 0) (33>47, 1)
       this.events.push(new Event("Go after the chips.", "You scurry across the car to the precious bag of chips. " + 
 		"<br>None of the passengers even notices your daring run because they are all too busy staring at their iPhones like zombies. " + 
@@ -423,14 +424,14 @@ function Events() {
 		"<br>You sit around in the train car for a while, thinking both about the Kardashian pregnancy and your place in the universe. " + 
 		"<br>In a muffled, scratchy voice, the driver announces the 23rd street Broadway stop. " + 
 		"<br>Want to get off here?", 
-		[]));
+		[35, 47]));
       //34 Stay hidden and don't go after the chips. (34>35, 0) (34>47, 1)
       this.events.push(new Event("Stay hidden under the seat.", "You eye the chips hungrily but decide not to risk it. " + 
 		"<br>You stay huddled in your hiding place. Better safe than sorry." + 
 		"<br>You sit around in the train car for a while, thinking both about the Kardashian pregnancy and your place in the universe. " + 
 		"<br>In a muffled, scratchy voice, the driver announces the 23rd street Broadway stop. " + 
 		"<br>Want to get off here?", 
-		[]));
+		[35, 47]));
 
       //Tunnel Two: Broadway (The Lion King)
       //35 Get off at Broadway. (33>35, 0) (34>35, 0)
@@ -458,7 +459,7 @@ function Events() {
 		"<br>It reads: \"The Clam, It Broods.\"" + 
 		"<br>Hmm, which show do you want to see? " + 
 		"<br>Free admission for rats either way.", 
-		[]));
+		[36, 77]));
       //36 The Lion King (35>36, 0) (66>36, 0)
       this.events.push(new Event("The Lion King", "You are super psyched for the blockbuster epic that is The Lion King! " + 
 		"<br>Rafiki was always your favorite, and now you'll get to relive all that awesome Disney magic! " + 
@@ -473,7 +474,7 @@ function Events() {
 		"<br>The back of the theater is not nearly so crowded, " + 
 		"<br>but you can tell already there are some teenagers who are planning to make out there. " + 
 		"<br>Maybe you could find a nice empty hiding spot in the back.", 
-		[]));
+		[37, 38]));
       //37 Choose to sit in the front and get crushed. [LOSE]
       this.events.push(new Event("Sit in the front.", "You race to the front of the theater, excited for the curtain to rise. " + 
 		"<br>Unfortunately just as the show is about to start, one late-coming family rushes in, " + 
@@ -494,7 +495,7 @@ function Events() {
 		"<br>You spot one man with a delicious bag of popcorn. " + 
 		"<br>There's also a woman with long braided hair surreptitiously eating a Clif Bar. " + 
 		"<br>Want to steal a snack?", 
-		[]));
+		[39, 40, 41]));
       //39 Steal the popcorn.
       this.events.push(new Event("Steal the popcorn.", "Stealthily, you approach the bespectacled man with the popcorn. " + 
 		"<br>He has a nervous leg twitch, which makes it hard to approach him without getting trampled upon. " + 
@@ -526,11 +527,11 @@ function Events() {
 		"<br>She smiles, breaks off a piece of the Clif Bar, and hands it to you." + 
 		"<br>\"Circle of life, my friend,\" she grins, returning her attention to the show. " + 
 		"<br>You gobble up the Clif Bar and try to watch the show as well, but you realize you can't really see so well back here.", 
-		[]));
+		[42]));
       //41 Don't steal any food.
       this.events.push(new Event("Don't steal any food.", "Eh, you're not that hungry. You can do without a snack for now. " + 
 		"<br>You focus on the show, but you find it's kinda hard to see all the way in the back of the theater.", 
-		[]));
+		[42]));
       //42 Head to the front of the theatre from the back.
       this.events.push(new Event("The view is better in the front.", "You scurry hastily to the front row of seats, careful not to disturb anyone or brush up against any legs. " + 
 		"<br>Luckily, the music from the show is so loud that you don't have to worry about keeping quiet, " + 
@@ -540,7 +541,7 @@ function Events() {
 		"<br>Everything is loud, vibrant and close. In fact, you realize, the view could be even better than the front row. " + 
 		"<br>The view would certainly be better from the stage itself! " + 
 		"<br>It does look pretty busy up there, though. Maybe that's not such a good idea.", 
-		[]));
+		[43, 44]));
       //43 Stay seated in front and die. [LOSE]
       this.events.push(new Event("Better stay seated.", "You snuggle into your spot in the front row. " + 
 		"<br>Unfortunately, a rather large gentleman also snuggled into your spot in the front row, " + 
@@ -559,7 +560,7 @@ function Events() {
 		"<br>" + 
 		"<br>One of the \"antelopes\" sees you on the floor of the stage and screams. " + 
 		"<br>The whole production immediately grinds to a halt.", 
-		[]));
+		[45, 46]));
       //45 Try to run off the stage get killed by actors. [LOSE]
       this.events.push(new Event("Run off the stage before everyone freaks out and kills you.", "You run off the stage but not fast enough. " + 
 		"<br>Rafiki kills you." + 
@@ -591,7 +592,7 @@ function Events() {
 		"<br>You scratch behind your ears and wash your whiskers as the train roars along. " + 
 		"<br>The conductor announces that the next stop is City Hall. " + 
 		"<br>Want to get off?", 
-		[]));
+		[48, 49]));
       //48 Get off at City Hall.
       this.events.push(new Event("Get off at City Hall.", "You pop off the subway at the City Hall stop. " + 
 		"<br>The platform is incredibly crowded with well-dressed people who are very invested in their mobile phones. " + 
@@ -599,7 +600,7 @@ function Events() {
 		"<br>as these suits are more interested in their impending business deals than in avoiding the sewer rat at their feet. " + 
 		"<br>To stay on this platform would be a death trap. " + 
 		"<br>Better see what's on the surface.", 
-		[]));
+		[50]));
       //49 Do NOT get off at City Hall, stay on the train a third time, janitor kills you. [LOSE]
       this.events.push(new Event("Stay on the train.", "You stay on the train. All the people get off at City Hall, and the train rattles on, empty and echoing. " + 
 		"<br>You yawn and fall into a woozy sleep." + 
@@ -615,7 +616,7 @@ function Events() {
 		"<br>You're in the Civic Center neighborhood. You had never bothered to check out this area of the city before, " + 
 		"<br>cause politics = boring, but since you're here, maybe you should take a look. " + 
 		"<br>On the other hand, maybe you could score some food from a street vendor.", 
-		[]));
+		[51, 76]));
 
       //Tunnel Two: City Hall
       //51 You enter City Hall. Face three room options: Bathroom (51>52, 0), Room 9 (51>55, 1), or Governor's Room (51>60, 2)
@@ -623,7 +624,7 @@ function Events() {
 		"<br>To your left, you see a sign for the bathroom. " + 
 		"<br>In front of you there's a sign for the Governor's Room. You're not sure quite what that is, but it sounds fancy. " + 
 		"<br>To your right is a sign for something called Room 9. Hmm. Where to, kiddo?", 
-		[]));
+		[52, 55, 60]));
       //52 Check out the Bathroom.
       this.events.push(new Event("Let's go to the bathroom.", "You're alone in the bathroom. You get a drink from one of the sink basins, but as you do so, a bumbling janitor comes in. " + 
 		"<br>He starts mindlessly mopping the floor, whistling a Led Zeppelin song, and doesn't spot you at first." + 
@@ -631,7 +632,7 @@ function Events() {
 		"<br>He says some naughty words that you wouldn't want your mother to hear." + 
 		"<br>With a mighty battle cry, the janitor wields his mop like a battle ax and takes a tremendous swing at you. " + 
 		"<br>You have only a fraction of a second to react. What do you want to do?", 
-		[]));
+		[53, 54]));
       //53 Try to dart out of the way of the janitor's mop and fail. [LOSE]
       this.events.push(new Event("Dart out of the way!", "Keeping your eyes locked on the mop head, you try to spring out of the way as the dreaded filthy mop crashes down to the floor." + 
 		"<br>Unfortunately, you're not quite limber enough, and you fail to get out of the way in time. " + 
@@ -644,7 +645,7 @@ function Events() {
       this.events.push(new Event("Run up the mop!", "You dart out of the bathroom as fast as you can, breathing hard. " + 
 		"<br>Your heart races in your chest and without thinking, you turn into the first room you see. " + 
 		"<br>The sign on the door reads Room 9.", 
-		[]));
+		[55]));
       
       //Tunnel Two: Room 9
       //55 Enter Room 9.
@@ -657,13 +658,13 @@ function Events() {
 		"<br>has left a bit of a turkey sandwich on the floor by his large feet. You're kinda hungry (per usual), and you gotta have that sandwich. " + 
 		"<br>The question is how to get it. Run directly across the room and risk being spotted, " + 
 		"<br>or try to obliquely edge your way around the room til you reach the precious morsel?", 
-		[]));
+		[56, 59]));
       //56 Run for the sandwich in Room 9.
       this.events.push(new Event("Just run right for it! I'm hungry!", "You figure that the journalists are so distracted by the strain of the 24-hour news cycle " + 
 		"<br>that they won't even notice if you dart across the room to get the turkey sandwich. " + 
 		"<br>Well, you thought wrong! They notice, of course. But instead of trying to kill you, they let you get the sandwich. " + 
 		"<br>They watch you eat, every single journalist in the room has her or his eyes trained on you with a fiery intensity that is a bit disconcerting.", 
-		[]));
+		[57]));
       //57 Keep eating the sandwich.
       this.events.push(new Event("Whatever, man. Just eat the sandwich. Be cool.", "You finish off the piece of turkey sandwich, and all the journalists start typing madly into their laptops and smartphones. " + 
 		"<br>You lick your lips, wash your whiskers, and even take some time to groom your fur and clean your tail. " + 
@@ -671,7 +672,7 @@ function Events() {
 		"<br>One of them puts a small audio recorder in your face, and you're pretty sure two of them have you on Skype. " + 
 		"<br>You finish grooming and walk out of the press room, out of City Hall, " + 
 		"<br>and down into the safety of the nearest sewer tunnel.", 
-		[]));
+		[58]));
       //58 Well that went well? [LOSE/win?]
       this.events.push(new Event("Well, that went well!", "The next morning, when reading the paper versions of the New York Times that no one wants anymore, " + 
 		"<br>you discover that a detailed, scathing campaign against Mayor Bloomberg and City Hall has been printed in every paper and blog in the city. " + 
@@ -719,7 +720,7 @@ function Events() {
 		"<br>In front of you, a silver platter filled with pigs in a blanket, coupled with very expensive mustard—" + 
 		"<br>a taste of home, but with an upscale twist. " + 
 		"<br>What would you like to eat first?", 
-		[]));
+		[61, 62, 63]));
       //61 Try the pâté. [LOSE]
       this.events.push(new Event("Let's try the pâté!", "You hungrily rush to the pâté and dig your paws into its soft, warm goodness. " + 
 		"<br>The sweet scent of meat dances with your nostrils and you take a moment—just a moment—to savor this exquisite moment before you dig in. " + 
@@ -768,7 +769,7 @@ function Events() {
 		"<br>You hear the politicians in the Governor's Room discussing a janitor and an exterminator, " + 
 		"<br>so you know you must move quickly and find a good hiding place. " + 
 		"<br>You rush down the hall to your right and into the room labeled Room 9.", 
-		[]));
+		[55]));
       //63 Try the cheese plate! Options: Put the cheese back. (63>64, 0) Or eat cheese defiantly. (63>67, 1) 
       this.events.push(new Event("Get involved with that cheese plate!", "You're a rat, so of course you're going for the fancy cheese plate. " + 
 		"<br>It is literally a mountain of succulent cheese. " + 
@@ -783,7 +784,7 @@ function Events() {
 		"<br>His stare bores through you to your very soul. " + 
 		"<br>Basically, you and The Bloom share what we might call \"A Moment.\"" + 
 		"<br>His look says one thing and one thing only: Don't you dare.", 
-		[]));
+		[64, 67]));
       //64 Put the cheese back. (63>64, 0)
       this.events.push(new Event("Put the cheese piece back on the plate.", "Timidly, you drop the piece of white, delicious cheese back on the cheese pyramid and wash your whiskers nervously. " + 
 		"<br>It doesn't appear that anyone else has seen you, but Bloomberg certainly has. " + 
@@ -796,7 +797,7 @@ function Events() {
 		"<br>Bloomberg says in a tone that suggests he is not \"asking\" at all. " + 
 		"<br>His eyes burn like someone who has been both a Democrat and a Republican and lived to tell the tale. " + 
 		"<br>He is not a man to be trifled with.", 
-		[]));
+		[65]));
       //65 Better leave City Hall. (64>65, 0)
       this.events.push(new Event("What can you say? You'd better leave.", "You exit the Governor's Room hastily, not wanting to cause a scene. " + 
 		"<br>You notice that Bloomberg shuts the door behind you. " + 
@@ -804,7 +805,7 @@ function Events() {
 		"<br>You sit outside on the Civic Center sidewalk and ponder your next move. " + 
 		"<br>How about hopping a train to somewhere less stuffy and self-absorbed? " + 
 		"<br>You heard there was a Siamese who was throwing a pretty sweet party somewhere on Broadway.", 
-		[]));
+		[66]));
       //66 Outside City Hall, head over to Broadway. (65>66, 0) See The Lion King. (66>36, 0) See The Clam, It Broods. (66>77, 1)
       this.events.push(new Event("Let's blow this popsicle stand and get on the train.", "You hop a lift on the nearest baby stroller and hide in a diaper bag until your vehicle approaches the subway terminal. " + 
 		"<br>You leap off the stroller, parent and child totally oblivious to your presence, " + 
@@ -836,7 +837,7 @@ function Events() {
 		"<br>It reads: \"The Clam, It Broods.\"" + 
 		"<br>Hmm, which show do you want to see? " + 
 		"<br>Free admission for rats either way.", 
-		[]));
+		[36, 77]));
         
       //Tunnel Two: Bloomberg Battle
       //67 Eat the cheese! You're not afraid! (63>67, 1) Turns into a fight. (67>68, 0)
@@ -857,7 +858,7 @@ function Events() {
 		"<br>He stands up from his seat at the table and strolls confidently, commandingly, " + 
 		"<br>toward you and that fateful cheese plate. " + 
 		"<br>The day of reckoning has come.", 
-		[]));
+		[68]));
       //68 The fight is on! (68>69, 0)
       this.events.push(new Event("It's on!", "Bloomberg reaches the banquet table, and you are frozen in fear. " + 
 		"<br>Your heart beats sickeningly in your chest, " + 
@@ -872,7 +873,7 @@ function Events() {
 		"<br>Then again, you are vastly out-numbered. " + 
 		"<br>Maybe it's best to rely on the element of surprise. " + 
 		"<br>How do you proceed?", 
-		[]));
+		[69, 70, 71]));
       //69 Take the old man hostage. [LOSE]
       this.events.push(new Event("Take the old man hostage.", "Before Bloomberg can take one more step toward you, " + 
 		"<br>you dart away from the cheese plate and race toward the feeble old man near the table. " + 
@@ -968,7 +969,7 @@ function Events() {
 		"<br>This cannot stand! You have to do something! " + 
 		"<br>You must make this demon pay for his crimes!" + 
 		"<br>What do you do?", 
-		[]));
+		[72, 73, 74, 75]));
       //72 Call rats for help. [LOSE]
       this.events.push(new Event("Call your fellow rats for help.", "You emit a mighty squeak and blink your eyes five times in rapid succession. " + 
 		"<br>The power of the secret rat signal has been unleashed!" + 
@@ -1093,7 +1094,8 @@ function Events() {
 		"<br>They chant in German about socialism. " + 
 		"<br>A large animatronic dolphin descends from the ceiling, water spurting from its mechanical blowhole." + 
 		"<br>This might possibly be the artsiest thing you've ever seen. " + 
-		"<br>What do you think of the play so far?", []));
+		"<br>What do you think of the play so far?",
+		[78, 79]));
       //78 If you think the play is boring, you have a dream and die. [LOSE]
       this.events.push(new Event("Ugh, so boring and pretentious!", "You don't have to be fluent in German to know that this play sucks. " + 
 		"<br>As a group of fourteen dwarves wearing traffic cones on their heads emerges on the stage, " + 
@@ -1136,7 +1138,7 @@ function Events() {
 		"<br>You can't wait to tell all the other rats about it." + 
 		"<br>You are totally absorbed in the play, and before you know it, it's time for the intermission. " + 
 		"<br>What do you want to do?", 
-		[]));
+		[80, 81]));
       //80 Look for food on the floor, meet The Critic and die. [LOSE]
       this.events.push(new Event("Check the floor of the theater for food.", "There's bound to be some tasty morsels dropped on the floor of this theater. " + 
 		"<br>You scurry around and finally spot a delectable-looking piece of brownie, only a few days old. " + 
@@ -1173,10 +1175,11 @@ function Events() {
 		"<br>Over to your right, you spot two women, a blonde and a brunette, " + 
 		"<br>having an animated conversation while clutching glasses of champagne. " + 
 		"<br>Whom would you like to talk to?", 
-		[]));
+		[82, 83]));
       //82 Try to talk to the German man. (81>82, 0)
       this.events.push(new Event("The man in the corner.", "Well, unfortunately, the man in the corner only speaks German. " + 
-		"<br>Looks like you'll have to talk to the ladies.", []));
+		"<br>Looks like you'll have to talk to the ladies.", 
+		[83]));
       //83 Talk to the two ladies in the corner. (81>83, 1) (82>83, 0)
       this.events.push(new Event("Chat up the ladies.", "You scurry over to the two bubbly women. " + 
 		"<br>They are discussing The Clam, It Broods with both joy and intensity. " + 
@@ -1200,7 +1203,7 @@ function Events() {
 		"<br>\"My sister just started a theater blog, and she's a complete idiot. " + 
 		"<br>But you...you could really make something of it.\"" + 
 		"<br>What do you think of this idea? Wanna be a blogger?", 
-		[]));
+		[84, 85]));
       //84 You reject the blog idea, run into The Critic, and die. [LOSE] (83>84, 0)
       this.events.push(new Event("Nah, typing is a chore.", "You politely tell the tipsy women that you're flattered, " + 
 		"<br>but you're not really into the whole blogging scene. " + 
