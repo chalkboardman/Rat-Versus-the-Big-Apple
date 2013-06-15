@@ -1259,32 +1259,6 @@ function Events() {
     	var exits = this.events[i].numeric_exits;
     	this.set_connection(i, exits);
     }
-
-/*
-    connections = [
-    				[1],
-    				[2],
-    				[3, 16, 29],
-    				[4, 6],
-    				[5],
-    				[]
-
-    				];
-
-    length =
-    for
-    	*/
-
-    				/*
-    this.set_connection(0, [1]);
-    this.set_connection(1, [2]);
-    this.set_connection(1, [2]);
-    this.set_connection(1, [2]);
-    this.set_connection(1, [2]);
-    this.set_connection(1, [2]);
-    this.set_connection(1, [2]);
-    this.set_connection(1, [2]);
-    */
 }
 
 //this is to hide that the id is implemented as an array
