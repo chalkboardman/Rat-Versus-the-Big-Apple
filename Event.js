@@ -720,7 +720,7 @@ function Events() {
 		"<br>In front of you, a silver platter filled with pigs in a blanket, coupled with very expensive mustard—" + 
 		"<br>a taste of home, but with an upscale twist. " + 
 		"<br>What would you like to eat first?", 
-		[61, 62, 63]));
+		[61, 63, 62]));
       //61 Try the pâté. [LOSE]
       this.events.push(new Event("Let's try the pâté!", "You hungrily rush to the pâté and dig your paws into its soft, warm goodness. " + 
 		"<br>The sweet scent of meat dances with your nostrils and you take a moment—just a moment—to savor this exquisite moment before you dig in. " + 
