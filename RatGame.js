@@ -30,27 +30,42 @@ Game.prototype.load_text = function () {
 
 Game.prototype.load_buttons = function () {
 	var event = this.current_event;
+	var game = this; //so we can access game in closure
+
 	$("#actions").empty(); //clear out current buttons
 
 	//create button
 	var length = event.exits.length;
-	for (var i = 0; i < length; i++) {
-		var exit = event.exits[i];
-		var button = "<li><button type='button'>" + exit.name + "</button></li>";
+	//if there are exits, list them
+	if (length > 0) {
+		for (var i = 0; i < length; i++) {
+			var exit = event.exits[i];
+			var button = "<li><button type='button'>" + exit.name + "</button></li>";
+			$("#actions").append(button);
+		}
+
+		//set event handlers for button
+		$("button").click(function () {
+			var index = $(this).parent().index();
+			console.log("Button index: " + index);
+
+			//load new event
+			game.current_event = event.exits[index];
+			game.load_event();
+		});
+	}
+	else {
+		//otherwise, put in a start over button
+		var button = "<li><button type='button'>Start Over?</button></li>";
 		$("#actions").append(button);
+
+		$("button").click(function () {
+			game.start();
+		});
 	}
 
-	var game = this; //so we can access game in closure
 
-	//set event handlers for button
-	$("button").click(function () {
-		var index = $(this).parent().index();
-		console.log("Button index: " + index);
 
-		//load new event
-		game.current_event = event.exits[index];
-		game.load_event();
-	});
 }
 
 $(document).ready(function() {
