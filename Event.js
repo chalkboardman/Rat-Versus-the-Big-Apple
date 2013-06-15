@@ -43,7 +43,7 @@ function Events() {
           //The Sewer
       //2 Choose 1 of 3 tunnels: The Narrow Tunnel (Tunnel One, 2>3, 0), Tunnel With A Weird Smell (Tunnel Three, 2>16, 1), Wide Tunnel (Tunnel Two, 2>29, 2)
       this.events.push(new Event("Forward to the dark sewer.", 
-		"<br>You blink your eyes, clean your whiskers quickly, and stroll into the depths of the sewer. " + 
+		"You blink your eyes, clean your whiskers quickly, and stroll into the depths of the sewer. " + 
 		"<br>It is dark and oppressively warm, and the scent of slow decay wafts around you. It is a lovely day." + 
 		"<br>Your feet pitter-patter softly on the sewer floor as you stroll along, hopping over small piles of sludge and debris. " + 
 		"<br>After several yards of strolling, you come to a series of three tunnels. " +
@@ -61,7 +61,7 @@ function Events() {
       
       //3 Choose the narrow tunnel at the beginning of the game. Right or Left Turn?
       this.events.push(new Event("Let's try the narrow tunnel.", 
-		"<br>You elect to go down the narrow tunnel to your left. You hop inside, deftly dodging the litter and other rubbish blocking the entrance. " + 
+		"You elect to go down the narrow tunnel to your left. You hop inside, deftly dodging the litter and other rubbish blocking the entrance. " + 
 		"<br>You can tell from just a quick sniff that there is no food of interest in that pile." + 
 		"<br>You stroll down the tunnel quite a ways, thinking about what a lovely day you're going to have: a few delicious snacks, " + 
 		"<br>maybe some wires to choose from, and definitely a trip to the cesspool later to cool down. It's far too steamy today." + 
@@ -77,7 +77,7 @@ function Events() {
       //Tunnel One: Right Turn (Death)
       //4 Right turn in Narrow Tunnel. (3>4, 0)
       this.events.push(new Event("Right.",  
-		"<br>You decide to check out the tunnel on the right. Maybe that roach was onto something good. " + 
+		"You decide to check out the tunnel on the right. Maybe that roach was onto something good. " + 
 		"<br>The tunnel narrows significantly after you enter it, but you're not afraid. " + 
 		"<br>Taking care that your whiskers don't brush too close to the tunnel walls, " + 
 		"<br>you squeeze your way down the narrow passage way. Though you can see quite well in the dark, " + 
