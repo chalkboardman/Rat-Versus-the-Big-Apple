@@ -40,7 +40,7 @@ Game.prototype.load_buttons = function () {
 	if (length > 0) {
 		for (var i = 0; i < length; i++) {
 			var choice = page.choices[i];
-			var button = "<li><button type='button'>" + pages[choice].title + "</button></li>";
+			var button = "<li><button type='button'>" + game.pages[choice].title + "</button></li>";
 			$("#actions").append(button);
 		}
 
