@@ -1,7 +1,5 @@
 function Game() {
-	this.events = new Events();
 	this.pages = pages;
-	this.current_event = this.events.start();
 	this.current_page = this.pages[0];
 }
 
