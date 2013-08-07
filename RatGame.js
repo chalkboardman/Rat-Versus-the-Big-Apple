@@ -22,13 +22,11 @@ Game.prototype.load_page = function () {
 }
 
 Game.prototype.load_text = function () {
-	var event = this.current_event;
 	var page = this.current_page;
 
 	$("#gametext").empty(); //clear out current game text
 	
 	//get new game text
-	//var new_text = "<p>" + event.description + "</p>";
 	var new_text = "<p>" + page.text + "</p>";
 
 	//write out game text
