@@ -1,46 +1,46 @@
 function Game() {
-	this.events = new Events();
-	this.current_event = this.events.start();
+	this.pages = pages;
+	this.current_page = this.pages[0];
 }
 
 Game.prototype.start = function () {
-	//set current event
-	var start_event = this.events.start();
-	this.current_event = start_event;
+	//set current page to first page
+	this.current_page = this.pages[0];
 	//load it up onto screen
-	this.load_event();
+	this.load_page();
 }
 
-Game.prototype.load_event = function () {
+//loads the current page
+Game.prototype.load_page = function () {
 	this.load_text();
 	this.load_buttons();
 }
 
 Game.prototype.load_text = function () {
-	var event = this.current_event;
+	var page = this.current_page;
 
 	$("#gametext").empty(); //clear out current game text
-
+	
 	//get new game text
-	var new_text = "<p>" + event.description + "</p>";
+	var new_text = "<p>" + page.text + "</p>";
 
 	//write out game text
 	$("#gametext").append(new_text);
 }
 
 Game.prototype.load_buttons = function () {
-	var event = this.current_event;
+	var page = this.current_page;
 	var game = this; //so we can access game in closure
 
 	$("#actions").empty(); //clear out current buttons
 
 	//create button
-	var length = event.exits.length;
-	//if there are exits, list them
+	var length = page.choices.length;
+	//if there are choices, list them
 	if (length > 0) {
 		for (var i = 0; i < length; i++) {
-			var exit = event.exits[i];
-			var button = "<li><button type='button'>" + exit.name + "</button></li>";
+			var choice = page.choices[i];
+			var button = "<li><button type='button'>" + game.pages[choice].title + "</button></li>";
 			$("#actions").append(button);
 		}
 
@@ -49,9 +49,9 @@ Game.prototype.load_buttons = function () {
 			var index = $(this).parent().index();
 			console.log("Button index: " + index);
 
-			//load new event
-			game.current_event = event.exits[index];
-			game.load_event();
+			//load new page
+			game.current_page = game.pages[(game.current_page.choices[index])];
+			game.load_page();
 		});
 	}
 	else {
