@@ -858,6 +858,7 @@ var pages = {
 				"<br>What would you like to eat first?", 
 		"choices" : [61, 63, 62]
 	},
+	//61 Try the pâté. [LOSE]
 	"61" : {
 		"title" : "Let's try the pâté!",
 		"text" : "You hungrily rush to the pâté and dig your paws into its soft, warm goodness. " + 
@@ -880,6 +881,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//62 Try the pigs in a blanket! Connects to Room 9. (62>55, 0)
 	"62" : {
 		"title" : "Nothing says party like pigs in a blanket!",
 		"text" : "You definitely have to have those pigs in a blanket first, you decide. " + 
@@ -911,6 +913,7 @@ var pages = {
 				"<br>You rush down the hall to your right and into the room labeled Room 9.", 
 		"choices" : [55]
 	},
+	//63 Try the cheese plate! Options: Put the cheese back. (63>64, 0) Or eat cheese defiantly. (63>67, 1)
 	"63" : {
 		"title" : "Get involved with that cheese plate!",
 		"text" : "You're a rat, so of course you're going for the fancy cheese plate. " + 
@@ -928,6 +931,7 @@ var pages = {
 				"<br>His look says one thing and one thing only: Don't you dare.", 
 		"choices" : [64, 67]
 	},
+	//64 Put the cheese back. (63>64, 0)
 	"64" : {
 		"title" : "Put the cheese piece back on the plate.",
 		"text" : "Timidly, you drop the piece of white, delicious cheese back on the cheese pyramid and wash your whiskers nervously. " + 
@@ -943,6 +947,7 @@ var pages = {
 				"<br>He is not a man to be trifled with.", 
 		"choices" : [65]
 	},
+	//65 Better leave City Hall. (64>65, 0)
 	"65" : {
 		"title" : "What can you say? You'd better leave.",
 		"text" : "You exit the Governor's Room hastily, not wanting to cause a scene. " + 
@@ -953,6 +958,7 @@ var pages = {
 				"<br>You heard there was a Siamese who was throwing a pretty sweet party somewhere on Broadway.", 
 		"choices" : [66]
 	},
+	//66 Outside City Hall, head over to Broadway. (65>66, 0) See The Lion King. (66>36, 0) See The Clam, It Broods. (66>77, 1)
 	"66" : {
 		"title" : "Let's blow this popsicle stand and get on the train.",
 		"text" : "You hop a lift on the nearest baby stroller and hide in a diaper bag until your vehicle approaches the subway terminal. " + 
@@ -987,6 +993,8 @@ var pages = {
 				"<br>Free admission for rats either way.", 
 		"choices" : [36, 77]
 	},
+	//Tunnel Two: Bloomberg Battle
+	//67 Eat the cheese! You're not afraid! (63>67, 1) Turns into a fight. (67>68, 0)
 	"67" : {
 		"title" : "Forget Bloomberg. Eat the cheese piece.",
 		"text" : "Ugh, Bloomberg! So paternalistic and bossy! " + 
@@ -1008,6 +1016,7 @@ var pages = {
 				"<br>The day of reckoning has come.", 
 		"choices" : [68]
 	},
+	//68 The fight is on! (68>69, 0)
 	"68" : {
 		"title" : "It's on!",
 		"text" : "Bloomberg reaches the banquet table, and you are frozen in fear. " + 
@@ -1025,6 +1034,7 @@ var pages = {
 				"<br>How do you proceed?", 
 		"choices" : [69, 70, 71]
 	},
+	//69 Take the old man hostage. [LOSE]
 	"69" : {
 		"title" : "Take the old man hostage.",
 		"text" : "Before Bloomberg can take one more step toward you, " + 
@@ -1042,6 +1052,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//70 Rush Bloomberg and claw his eyes. [LOSE/win?]
 	"70" : {
 		"title" : "Rush Bloomberg and claw his eyes.",
 		"text" : "Without a moment's hesitation, you throw yourself at the strongest advocate for gun control in New York City. " + 
@@ -1088,6 +1099,7 @@ var pages = {
 				"<br>You win?", 
 		"choices" : []
 	},
+	//71 Wait for Bloomberg to come to you.
 	"71" : {
 		"title" : "Wait for Bloomberg to come to you.",
 		"text" : "You figure you'd better see just way the mayor is up to before you make any sudden decisions." + 
@@ -1127,6 +1139,7 @@ var pages = {
 				"<br>What do you do?", 
 		"choices" : [72, 73, 74, 75]
 	},
+	//72 Call rats for help. [LOSE]
 	"72" : {
 		"title" : "Call your fellow rats for help.",
 		"text" : "You emit a mighty squeak and blink your eyes five times in rapid succession. " + 
@@ -1142,6 +1155,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//73 Charge Bloomberg. [LOSE/win?]
 	"73" : {
 		"title" : "Charge and aim for the eyes.",
 		"text" : "Without a moment's hesitation, you throw yourself at the strongest advocate for gun control in New York City. " + 
@@ -1188,6 +1202,7 @@ var pages = {
 				"<br>You win?", 
 		"choices" : []
 	},
+	//74 Throw soda at Bloomberg. [WIN]
 	"74" : {
 		"title" : "Throw soda at Bloomberg's face.",
 		"text" : "Quick as a flash, you pop open the can of soda with your nimble fingers. " + 
@@ -1213,6 +1228,7 @@ var pages = {
 				"<br>YOU WIN!", 
 		"choices" : []
 	},
+	//75 Throw cheese cubes at Bloomberg. [LOSE]
 	"75" : {
 		"title" : "Throw cheese cubes from the cheese plate.",
 		"text" : "With both hands, you grab cubes of cheese from the mighty cheese pyramid" + 
@@ -1230,6 +1246,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//76 Never check out City Hall in the first place. (50>76, 1) [LOSE]
 	"76" : {
 		"title" : "Eh, forget it. Keep walking down the street.",
 		"text" : "You decide to keep walking down the street. Where are those cheese-covered soft pretzels you smelled earlier? " + 
@@ -1240,6 +1257,8 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//Tunnel Two: Broadway (The Clam, It Broods)
+	//77 The Clam, It Broods. (35>77, 1) (66>77, 1) Boring? (77>78, 0) Awesome? (77>79, 1)
 	"77" : {
 		"title" : "The Clam, It Broods",
 		"text" : "You head for the small theater showing the mysterious \"The Clam, It Broods\" play. " + 
@@ -1263,6 +1282,7 @@ var pages = {
 				"<br>What do you think of the play so far?",
 		"choices" : [78, 79]
 	},
+	//78 If you think the play is boring, you have a dream and die. [LOSE]
 	"78" : {
 		"title" : "Ugh, so boring and pretentious!",
 		"text" : "You don't have to be fluent in German to know that this play sucks. " + 
@@ -1301,6 +1321,7 @@ var pages = {
 				"<br>You lose.",
 		"choices" : []
 	},
+	//79 You think the play is awesome and you live to intermission. (79>80, 0) (79>81, 1)
 	"79" : {
 		"title" : "Innovative! I love it!",
 		"text" : "You don't have to be fluent in German to know that The Clam, It Broods is awesome! " + 
@@ -1311,6 +1332,7 @@ var pages = {
 				"<br>What do you want to do?", 
 		"choices" : [80, 81]
 	},
+	//80 Look for food on the floor, meet The Critic and die. [LOSE]
 	"80" : {
 		"title" : "Check the floor of the theater for food.",
 		"text" : "There's bound to be some tasty morsels dropped on the floor of this theater. " + 
@@ -1341,6 +1363,7 @@ var pages = {
 				"<br>You lose.",
 		"choices" : []
 	},
+	//81 Head out to the lobby to socialize.
 	"81" : {
 		"title" : "Go out in the lobby and socialize.",
 		"text" : "You head into the lobby, " + 
@@ -1353,12 +1376,14 @@ var pages = {
 				"<br>Whom would you like to talk to?", 
 		"choices" : [82, 83]
 	},
+	//82 Try to talk to the German man. (81>82, 0)
 	"82" : {
 		"title" : "The man in the corner.",
 		"text" : "Well, unfortunately, the man in the corner only speaks German. " + 
 			"<br>Looks like you'll have to talk to the ladies.", 
 		"choices" : [83]
 	},
+	//83 Talk to the two ladies in the corner. (81>83, 1) (82>83, 0)
 	"83" : {
 		"title" : "Chat up the ladies.",
 		"text" : "You scurry over to the two bubbly women. " + 
@@ -1385,6 +1410,7 @@ var pages = {
 				"<br>What do you think of this idea? Wanna be a blogger?", 
 		"choices" : [84, 85]
 	},
+	//84 You reject the blog idea, run into The Critic, and die. [LOSE]
 	"84" : {
 		"title" : "Nah, typing is a chore.",
 		"text" : "You politely tell the tipsy women that you're flattered, " + 
@@ -1420,6 +1446,7 @@ var pages = {
 				"<br>You lose.",
 		"choices" : []
 	},
+	//85 You love the blog idea, and become a famous critic! [WIN!!]
 	"85" : {
 		"title" : "Totally! RatPlayz.tumblr.com, baby!",
 		"text" : "A theater blog! It's an excellent idea! " + 
