@@ -34,21 +34,17 @@ Game.prototype.load_text = function () {
 }
 
 Game.prototype.load_buttons = function () {
-	var event = this.current_event;
 	var page = this.current_page;
 	var game = this; //so we can access game in closure
 
 	$("#actions").empty(); //clear out current buttons
 
 	//create button
-	//var length = event.exits.length;
 	var length = page.choices.length;
-	//if there are exits, list them
+	//if there are choices, list them
 	if (length > 0) {
 		for (var i = 0; i < length; i++) {
 			var choice = page.choices[i];
-			var exit = event.exits[i];
-			//var button = "<li><button type='button'>" + exit.name + "</button></li>";
 			var button = "<li><button type='button'>" + pages[choice].title + "</button></li>";
 			$("#actions").append(button);
 		}
@@ -58,8 +54,7 @@ Game.prototype.load_buttons = function () {
 			var index = $(this).parent().index();
 			console.log("Button index: " + index);
 
-			//load new event
-			game.current_event = event.exits[index];
+			//load new page
 			game.current_page = game.pages[(game.current_page.choices[index])];
 			game.load_page();
 		});
