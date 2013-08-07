@@ -17,186 +17,196 @@ var pages = {
 		"choices" : [1]
 	},
 	//1 Wake up in the sewer.
-	"1" : {	"title" : "Sewer Entrance", 
-			"text" : "You wake up in a dark and smelly place that feels quite homey. " + 
-					"<br>Liquid sludge surrounds you, but you're unbothered by it." + 
-					"<br>" + 
-					"<br>Ahead is the darkness and dull echo of the sewer. " + 
-					"<br>Above your head is a sewer grate, through which shine a few brave beams of light. " + 
-					"<br>Maybe someday you'll go up and see the surface, but today is not that day. " + 
-					"<br>Better just go forward into the darkness of the sewer for now. It's safer.", 
-			"choices" : [2]
+	"1" : {	
+		"title" : "Sewer Entrance", 
+		"text" : "You wake up in a dark and smelly place that feels quite homey. " + 
+				"<br>Liquid sludge surrounds you, but you're unbothered by it." + 
+				"<br>" + 
+				"<br>Ahead is the darkness and dull echo of the sewer. " + 
+				"<br>Above your head is a sewer grate, through which shine a few brave beams of light. " + 
+				"<br>Maybe someday you'll go up and see the surface, but today is not that day. " + 
+				"<br>Better just go forward into the darkness of the sewer for now. It's safer.", 
+		"choices" : [2]
 	},
 	//The Sewer
 	//2 Choose 1 of 3 tunnels: The Narrow Tunnel (Tunnel One, 2>3, 0), Tunnel With A Weird Smell (Tunnel Three, 2>16, 1), Wide Tunnel (Tunnel Two, 2>29, 2)
-	"2" : { "title" : "Forward to the dark sewer.", 
-			"text" : "You blink your eyes, clean your whiskers quickly, and stroll into the depths of the sewer. " + 
-					"<br>It is dark and oppressively warm, and the scent of slow decay wafts around you. It is a lovely day." + 
-					"<br>Your feet pitter-patter softly on the sewer floor as you stroll along, hopping over small piles of sludge and debris. " + 
-					"<br>After several yards of strolling, you come to a series of three tunnels. " +
-					"<br>" + 
-					"<br>One of the tunnels, to your left, is quite narrow and very dark. It is partially obstructed by litter and waste." + 
-					"<br>Another tunnel, in the center, is much wider. You hear a heavy, echoing rumble somewhere deep inside it." + 
-					"<br>The last tunnel, to your right, is slightly smaller. No sound escapes from it, but at its entrance is a large pool of sludge. " + 
-					"<br>A strong rotting smell comes from this tunnel." + 
-					"<br>" + 
-					"<br>Which way do you want to go, kiddo?", 
-			"choices" : [3, 16, 29]
+	"2" : { 
+		"title" : "Forward to the dark sewer.", 
+		"text" : "You blink your eyes, clean your whiskers quickly, and stroll into the depths of the sewer. " + 
+				"<br>It is dark and oppressively warm, and the scent of slow decay wafts around you. It is a lovely day." + 
+				"<br>Your feet pitter-patter softly on the sewer floor as you stroll along, hopping over small piles of sludge and debris. " + 
+				"<br>After several yards of strolling, you come to a series of three tunnels. " +
+				"<br>" + 
+				"<br>One of the tunnels, to your left, is quite narrow and very dark. It is partially obstructed by litter and waste." + 
+				"<br>Another tunnel, in the center, is much wider. You hear a heavy, echoing rumble somewhere deep inside it." + 
+				"<br>The last tunnel, to your right, is slightly smaller. No sound escapes from it, but at its entrance is a large pool of sludge. " + 
+				"<br>A strong rotting smell comes from this tunnel." + 
+				"<br>" + 
+				"<br>Which way do you want to go, kiddo?", 
+		"choices" : [3, 16, 29]
 	},
 	//Tunnel One: Narrow Tunnel (Rat Gang)
 	//3 Choose the narrow tunnel at the beginning of the game. Right or Left Turn?
-	"3" : { "title" : "Let's try the narrow tunnel.", 
-			"text" : "You elect to go down the narrow tunnel to your left. You hop inside, deftly dodging the litter and other rubbish blocking the entrance. " + 
-					"<br>You can tell from just a quick sniff that there is no food of interest in that pile." + 
-					"<br>You stroll down the tunnel quite a ways, thinking about what a lovely day you're going to have: a few delicious snacks, " + 
-					"<br>maybe some wires to choose from, and definitely a trip to the cesspool later to cool down. It's far too steamy today." + 
-					"<br>Eventually, you come to yet another fork in the road: two tunnel branches sit silent and dark before you. " + 
-					"<br>Neither of them has a particularly distinctive scent." + 
-					"<br>You think you hear a sound coming from the tunnel on the left but that could be a good thing or a bad thing." + 
-					"<br>A lone roach crawls out of the tunnel on the right. You avoid eye contact with it. " + 
-					"<br>Roaches can be so socially awkward." + 
-					"<br>" + 
-					"<br>Which way now? Right or left?", 
-			"choices" : [4, 6]
+	"3" : { 
+		"title" : "Let's try the narrow tunnel.", 
+		"text" : "You elect to go down the narrow tunnel to your left. You hop inside, deftly dodging the litter and other rubbish blocking the entrance. " + 
+				"<br>You can tell from just a quick sniff that there is no food of interest in that pile." + 
+				"<br>You stroll down the tunnel quite a ways, thinking about what a lovely day you're going to have: a few delicious snacks, " + 
+				"<br>maybe some wires to choose from, and definitely a trip to the cesspool later to cool down. It's far too steamy today." + 
+				"<br>Eventually, you come to yet another fork in the road: two tunnel branches sit silent and dark before you. " + 
+				"<br>Neither of them has a particularly distinctive scent." + 
+				"<br>You think you hear a sound coming from the tunnel on the left but that could be a good thing or a bad thing." + 
+				"<br>A lone roach crawls out of the tunnel on the right. You avoid eye contact with it. " + 
+				"<br>Roaches can be so socially awkward." + 
+				"<br>" + 
+				"<br>Which way now? Right or left?", 
+		"choices" : [4, 6]
 	},
 	//Tunnel One: Right Turn (Death)
 	//4 Right turn in Narrow Tunnel. (3>4, 0)
-	"4" : { "title" : "Right.",  
-			"text" : "You decide to check out the tunnel on the right. Maybe that roach was onto something good. " + 
-					"<br>The tunnel narrows significantly after you enter it, but you're not afraid. " + 
-					"<br>Taking care that your whiskers don't brush too close to the tunnel walls, " + 
-					"<br>you squeeze your way down the narrow passage way. Though you can see quite well in the dark, " + 
-					"<br>the utter blackness of this tunnel is a bit disconcerting, and you're increasingly finding it harder and harder to see. " + 
-					"<br>You smell a faint rotting smell, and take notice of several skeletons right beside you in the narrow tunnel. " + 
-					"<br>You dare not look at them too closely. " + 
-					"<br>All you know is they're not rats. Surely there must be some food down here, you tell yourself. " + 
-					"<br>Why else would all these other creatures have traveled this way? " + 
-					"<br>" + 
-					"<br>But the tunnel goes on and on endlessly, and at this point you've been walking in the same narrow passage for hours. " + 
-					"<br>You don't want to give up on your food hunt,but this is getting ridiculous. " + 
-					"<br>You'll never make it to the cesspool in time if you don't turn around and head back now.", 
-			"choices" : [5]
-
+	"4" : { 
+		"title" : "Right.",  
+		"text" : "You decide to check out the tunnel on the right. Maybe that roach was onto something good. " + 
+				"<br>The tunnel narrows significantly after you enter it, but you're not afraid. " + 
+				"<br>Taking care that your whiskers don't brush too close to the tunnel walls, " + 
+				"<br>you squeeze your way down the narrow passage way. Though you can see quite well in the dark, " + 
+				"<br>the utter blackness of this tunnel is a bit disconcerting, and you're increasingly finding it harder and harder to see. " + 
+				"<br>You smell a faint rotting smell, and take notice of several skeletons right beside you in the narrow tunnel. " + 
+				"<br>You dare not look at them too closely. " + 
+				"<br>All you know is they're not rats. Surely there must be some food down here, you tell yourself. " + 
+				"<br>Why else would all these other creatures have traveled this way? " + 
+				"<br>" + 
+				"<br>But the tunnel goes on and on endlessly, and at this point you've been walking in the same narrow passage for hours. " + 
+				"<br>You don't want to give up on your food hunt,but this is getting ridiculous. " + 
+				"<br>You'll never make it to the cesspool in time if you don't turn around and head back now.", 
+		"choices" : [5]
 	},
 	//5 Get trapped in right tunnel and die. [LOSE]
-	"5" : { "title" : "Turn back.",
-			"text" : "You turn around to head back to the tunnel entrance. " + 
-					"<br>Unfortunately, you take only a few steps forward before you realize that the tunnel is now too narrow for you to fit through. " + 
-					"<br>You suck in your stomach and claw at the metal walls, but nothing works. Somehow either you got fatter or it got skinnier. " + 
-					"<br>Either way, try as you might, you cannot squeeze your way back the way you came. Nor can you go forward. " + 
-					"<br>You're stuck, the cruel cylinder of the tunnel closing in around your body." + 
-					"<br>You squeak for help but no one answers. No one would, not this far down in the sewer depths. " + 
-					"<br>Like those other unfortunate animals before you, you get stuck in the tiny tunnel and die. " + 
-					"<br>" + 
-					"<br>You lose.", 
-			"choices" : []
+	"5" : { 
+		"title" : "Turn back.",
+		"text" : "You turn around to head back to the tunnel entrance. " + 
+				"<br>Unfortunately, you take only a few steps forward before you realize that the tunnel is now too narrow for you to fit through. " + 
+				"<br>You suck in your stomach and claw at the metal walls, but nothing works. Somehow either you got fatter or it got skinnier. " + 
+				"<br>Either way, try as you might, you cannot squeeze your way back the way you came. Nor can you go forward. " + 
+				"<br>You're stuck, the cruel cylinder of the tunnel closing in around your body." + 
+				"<br>You squeak for help but no one answers. No one would, not this far down in the sewer depths. " + 
+				"<br>Like those other unfortunate animals before you, you get stuck in the tiny tunnel and die. " + 
+				"<br>" + 
+				"<br>You lose.", 
+		"choices" : []
 	},
 	//Tunnel One: Left Turn (Rat Gang)
     //6 Left turn in Narrow Tunnel. Meet the Rat Gang. (3>6, 1)
-	"6" : { "title" : "Left.",
-			"text" : "Like a good politician, you head to the left. " + 
-					"<br>You haven't walked more than a few yards into the tunnel when the voices you heard at the entrance get significantly louder. " + 
-					"<br>Lots of shouting and laughter. From the scent, you can tell there are at least some fellow rats there." + 
-					"<br>Sure enough, you turn a corner in the tunnel and come face to face with a group of six rats. " + 
-					"<br>These aren't just any rats—you can tell immediately from their markings, tattered ears, and snide expressions." + 
-					"<br>" + 
-					"<br>This is a rat gang." + 
-					"<br>" + 
-					"<br>Gang violence has always been something of an issue in the rat community, as rat gangs are notoriously impulsive and emotion-driven. " + 
-					"<br>You are immediately on your toes. You consider running away, but the rat gang has already spotted you." + 
-					"<br>\"Hey, look at this,\" one of the smaller rats yells. \"We got a visitor!\"" + 
-					"<br>The other rats stop their laughing and joking and all turn to study you. " + 
-					"<br>The largest rat, clearly the leader, gets up and saunters toward you, a smirk upon his face." + 
-					"<br>\"What're you doin' here?\" he asks with a menacing grin. \"Come to crash our party?\" His ears are in tatters, you notice, he is missing a tooth, " + 
-					"<br>and he has only one eye. You dare not break eye contact with his remaining eye." + 
-					"<br>" + 
-					"<br>\"S—sorry,\" you stutter, backing away slowly. \"I was just exploring.\"" + 
-					"<br>\"Explorin'?\" The leader of the rat gang laughs a hearty, smokey laugh. " + 
-					"<br>He turns to the rest of the rats. You hear that, fellas? Explorin'. Look at that.\"" + 
-					"<br>Got Christopher Columbus over here, ain't we? snickered one of the other rats as the gang exploded in laughter." + 
-					"<br>Whatcha explorin' for? the gang leader asks you, putting his face close to yours. " + 
-					"<br>His breath is sharp and sour. \"Explorin' for trouble?\"" + 
-					"<br>\"Not really,\" you whisper, wishing that you had never set foot in this tunnel. " + 
-					"<br>Surely this rat gang will be the end of you." + 
-					"<br>The leader laughs again, whipping his bent tail jovially. \"Relax, buddy,\" he says with a crooked smile. " + 
-					"<br>\"Just messin' with ya.\"" + 
-					"<br>" + 
-					"<br>You try to look relieved, but your heart is still in your throat." + 
-					"<br>\"Siddown,\" says the rat leader. \"Relax. Let's have a little chat, and you can tell us all about your little adventures.\" " + 
-					"<br>He trots over to the other rats, who are seated atop a garbage heap." + 
-					"<br>\"Come on and join the party,\" call the rats. You're not entirely sure you want to keep talking to them, but something in their tone suggests you can't really say no.", 
-			"choices" : [7, 15]
+	"6" : { 
+		"title" : "Left.",
+		"text" : "Like a good politician, you head to the left. " + 
+				"<br>You haven't walked more than a few yards into the tunnel when the voices you heard at the entrance get significantly louder. " + 
+				"<br>Lots of shouting and laughter. From the scent, you can tell there are at least some fellow rats there." + 
+				"<br>Sure enough, you turn a corner in the tunnel and come face to face with a group of six rats. " + 
+				"<br>These aren't just any rats—you can tell immediately from their markings, tattered ears, and snide expressions." + 
+				"<br>" + 
+				"<br>This is a rat gang." + 
+				"<br>" + 
+				"<br>Gang violence has always been something of an issue in the rat community, as rat gangs are notoriously impulsive and emotion-driven. " + 
+				"<br>You are immediately on your toes. You consider running away, but the rat gang has already spotted you." + 
+				"<br>\"Hey, look at this,\" one of the smaller rats yells. \"We got a visitor!\"" + 
+				"<br>The other rats stop their laughing and joking and all turn to study you. " + 
+				"<br>The largest rat, clearly the leader, gets up and saunters toward you, a smirk upon his face." + 
+				"<br>\"What're you doin' here?\" he asks with a menacing grin. \"Come to crash our party?\" His ears are in tatters, you notice, he is missing a tooth, " + 
+				"<br>and he has only one eye. You dare not break eye contact with his remaining eye." + 
+				"<br>" + 
+				"<br>\"S—sorry,\" you stutter, backing away slowly. \"I was just exploring.\"" + 
+				"<br>\"Explorin'?\" The leader of the rat gang laughs a hearty, smokey laugh. " + 
+				"<br>He turns to the rest of the rats. You hear that, fellas? Explorin'. Look at that.\"" + 
+				"<br>Got Christopher Columbus over here, ain't we? snickered one of the other rats as the gang exploded in laughter." + 
+				"<br>Whatcha explorin' for? the gang leader asks you, putting his face close to yours. " + 
+				"<br>His breath is sharp and sour. \"Explorin' for trouble?\"" + 
+				"<br>\"Not really,\" you whisper, wishing that you had never set foot in this tunnel. " + 
+				"<br>Surely this rat gang will be the end of you." + 
+				"<br>The leader laughs again, whipping his bent tail jovially. \"Relax, buddy,\" he says with a crooked smile. " + 
+				"<br>\"Just messin' with ya.\"" + 
+				"<br>" + 
+				"<br>You try to look relieved, but your heart is still in your throat." + 
+				"<br>\"Siddown,\" says the rat leader. \"Relax. Let's have a little chat, and you can tell us all about your little adventures.\" " + 
+				"<br>He trots over to the other rats, who are seated atop a garbage heap." + 
+				"<br>\"Come on and join the party,\" call the rats. You're not entirely sure you want to keep talking to them, but something in their tone suggests you can't really say no.", 
+		"choices" : [7, 15]
 	},
 	//7 Keep talking to the rats.
-	"7" : { "title" : "Keep talking to the rats.",
-			"text" : "You join the rats on top of the trash heap and try to think of impressive things to say." + 
-					"<br>\"Wait, wait,\" says one of the rats. \"We can't just let this guy hang with us!\" " + 
-					"<br>The other rats stop laughing and joking, waiting for a response from the leader." + 
-					"<br>\"What do you mean?\" the leader asks." + 
-					"<br>\"He hasn't given us the secret signal!\" exclaims the other gang member. " + 
-					"<br>\"We can't just be associatin' with people who don't know the secret gang signal!\"" + 
-					"<br>\"Good point,\" muses the leader. \"Give us the secret signal and you're cool with us. " + 
-					"<br>And no messin' around neither! If you don't give us the right signal, we have no choice but to take you down.\"" + 
-					"<br>" + 
-					"<br>Your heart races in your chest. A secret signal? " + 
-					"<br>What secret signal? You rack your brain, but you can't recall learning any secret signals ever! You knew it was a mistake to get involved with a gang in the first place!" + 
-					"<br>A flurry of potential secret signals rushes to your brain. Should you just do a random handshake and hope it's the secret signal? " + 
-					"<br>Or do you want to wait and see if the rats drop any clues?", 
-			"choices" : [8, 12]
+	"7" : { 
+		"title" : "Keep talking to the rats.",
+		"text" : "You join the rats on top of the trash heap and try to think of impressive things to say." + 
+				"<br>\"Wait, wait,\" says one of the rats. \"We can't just let this guy hang with us!\" " + 
+				"<br>The other rats stop laughing and joking, waiting for a response from the leader." + 
+				"<br>\"What do you mean?\" the leader asks." + 
+				"<br>\"He hasn't given us the secret signal!\" exclaims the other gang member. " + 
+				"<br>\"We can't just be associatin' with people who don't know the secret gang signal!\"" + 
+				"<br>\"Good point,\" muses the leader. \"Give us the secret signal and you're cool with us. " + 
+				"<br>And no messin' around neither! If you don't give us the right signal, we have no choice but to take you down.\"" + 
+				"<br>" + 
+				"<br>Your heart races in your chest. A secret signal? " + 
+				"<br>What secret signal? You rack your brain, but you can't recall learning any secret signals ever! You knew it was a mistake to get involved with a gang in the first place!" + 
+				"<br>A flurry of potential secret signals rushes to your brain. Should you just do a random handshake and hope it's the secret signal? " + 
+				"<br>Or do you want to wait and see if the rats drop any clues?", 
+		"choices" : [8, 12]
 	},
 	//8 Do nothing for secret signal. (7>8, 0)
-	"8" : { "title" : "No idea. Wait and see what they do.", 
-			"text" : "You have no idea what the signal could possibly be, so you stand around stupidly holding your breath." + 
-					"<br>\"Well?\" says the leader, irritation creeping into his voice." + 
-					"<br>\"Uh...\" You are totally drawing a blank. " + 
-					"<br>Your heart feels like it's going to burst through your chest. " + 
-					"<br>You stare blankly but then realize the severity of the situation and blink your eyes five times in quick succession." + 
-					"<br>\"The secret signal!\" the rats exclaim, simultaneously bowing down before you in reverence. " + 
-					"<br>\"The secret signal!\"" + 
-					"<br>" + 
-					"<br>What? You are totally confused, but the rats are now staring at you with rapt attention. Then it hits you. " + 
-					"<br>The rapid blinking! That must be the secret signal! " + 
-					"<br>That is possibly the dumbest secret signal ever devised. But hey, your passivity has paid off!" + 
-					"<br>\"Looks like we were wrong about you not having any cred,\" smiles the leader. " + 
-					"<br>\"Considering you knew the secret signal all along.\"" + 
-					"<br>\"Uh, yeah,\" you stammer, trying to act affronted. \"Of course I did.\"" + 
-					"<br>" + 
-					"<br>\"Join us! Join us!\" the other rats call in a merry chorus." + 
-					"<br>\"You really should come on board,\" says the leader. " + 
-					"<br>\"Trust me, kid, this is where you wanna be. We're the toughest gang this side of Brooklyn.\"" + 
-					"<br>You laugh and ponder the offer. You don't really like the idea of being involved in a gang. " + 
-					"<br>It's a hard, dangerous life, and you could be killed at any moment. " + 
-					"<br>At the same time, though, you don't want to offend the rats, and it does sound kind of exciting." + 
-					"<br>" + 
-					"<br>What do you want to do?", 
-			"choices" : [9, 10, 11]
+	"8" : { 
+		"title" : "No idea. Wait and see what they do.", 
+		"text" : "You have no idea what the signal could possibly be, so you stand around stupidly holding your breath." + 
+				"<br>\"Well?\" says the leader, irritation creeping into his voice." + 
+				"<br>\"Uh...\" You are totally drawing a blank. " + 
+				"<br>Your heart feels like it's going to burst through your chest. " + 
+				"<br>You stare blankly but then realize the severity of the situation and blink your eyes five times in quick succession." + 
+				"<br>\"The secret signal!\" the rats exclaim, simultaneously bowing down before you in reverence. " + 
+				"<br>\"The secret signal!\"" + 
+				"<br>" + 
+				"<br>What? You are totally confused, but the rats are now staring at you with rapt attention. Then it hits you. " + 
+				"<br>The rapid blinking! That must be the secret signal! " + 
+				"<br>That is possibly the dumbest secret signal ever devised. But hey, your passivity has paid off!" + 
+				"<br>\"Looks like we were wrong about you not having any cred,\" smiles the leader. " + 
+				"<br>\"Considering you knew the secret signal all along.\"" + 
+				"<br>\"Uh, yeah,\" you stammer, trying to act affronted. \"Of course I did.\"" + 
+				"<br>" + 
+				"<br>\"Join us! Join us!\" the other rats call in a merry chorus." + 
+				"<br>\"You really should come on board,\" says the leader. " + 
+				"<br>\"Trust me, kid, this is where you wanna be. We're the toughest gang this side of Brooklyn.\"" + 
+				"<br>You laugh and ponder the offer. You don't really like the idea of being involved in a gang. " + 
+				"<br>It's a hard, dangerous life, and you could be killed at any moment. " + 
+				"<br>At the same time, though, you don't want to offend the rats, and it does sound kind of exciting." + 
+				"<br>" + 
+				"<br>What do you want to do?", 
+		"choices" : [9, 10, 11]
 	},
 	//9 You agree to join the Rat Gang. [WIN]
-	"9" : { "title" : "You agree to join the rat gang.",
-			"text" : "You tell the rats that you are happy to join their gang. " + 
-					"<br>They shriek in a mad joyous frenzy and you guys all get really full on a feast of rotten trash. " + 
-					"<br>Over time, you work your way up in the ranks and become king of a mighty rat empire." + 
-					"<br>" + 
-					"<br>YOU WIN!", 
-			"choices" : []
+	"9" : { 
+		"title" : "You agree to join the rat gang.",
+		"text" : "You tell the rats that you are happy to join their gang. " + 
+				"<br>They shriek in a mad joyous frenzy and you guys all get really full on a feast of rotten trash. " + 
+				"<br>Over time, you work your way up in the ranks and become king of a mighty rat empire." + 
+				"<br>" + 
+				"<br>YOU WIN!", 
+		"choices" : []
 	},
 	//10 You refuse to join the Rat Gang and they kill you. [LOSE]
-	"10" : { "title" : "You refuse to join the rat gang.", 
-			"text" : "You decline the rats' offer to join the gang, explaining that it's really just not your thing. " + 
-					"<br>Plus, you think it would conflict with your bridge club meetings each week." + 
-					"<br>The rats glare at you, super offended. They swarm around you and kill you. " + 
-					"<br>No one says no to a rat gang, you idiot." + 
-					"<br>" + 
-					"<br>You lose.", 
-			"choices" : []
+	"10" : { 
+		"title" : "You refuse to join the rat gang.", 
+		"text" : "You decline the rats' offer to join the gang, explaining that it's really just not your thing. " + 
+				"<br>Plus, you think it would conflict with your bridge club meetings each week." + 
+				"<br>The rats glare at you, super offended. They swarm around you and kill you. " + 
+				"<br>No one says no to a rat gang, you idiot." + 
+				"<br>" + 
+				"<br>You lose.", 
+		"choices" : []
 	},
 	//11 You ask for more time and they kill you. [LOSE]
-	"11" : { "title" : "You ask for more time to consider your decision.", 
-			"text" : "The rats tell you that if you want to stall when making decisions, you should have gone into politics. " + 
-					"<br>They kill you for being indecisive." + 
-					"<br>" + 
-					"<br>You lose.", 
-			"choices" : []
+	"11" : { 
+		"title" : "You ask for more time to consider your decision.", 
+		"text" : "The rats tell you that if you want to stall when making decisions, you should have gone into politics. " + 
+				"<br>They kill you for being indecisive." + 
+				"<br>" + 
+				"<br>You lose.", 
+		"choices" : []
 	},
 	//12 Grab leader's paw for secret signal. (7>12, 1)
 	"12" : {
