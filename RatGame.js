@@ -15,10 +15,7 @@ Game.prototype.start = function () {
 	this.load_page();
 }
 
-Game.prototype.load_event = function () {
-	this.load_text();
-	this.load_buttons();
-}
+//loads the current page
 Game.prototype.load_page = function () {
 	this.load_text();
 	this.load_buttons();
