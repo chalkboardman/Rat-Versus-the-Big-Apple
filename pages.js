@@ -7,13 +7,14 @@
 //the list of adjacent nodes is called "choices"
 var pages = { 
 	//0 Welcome message when the user runs the game.
-	"0" : { "title" : "Rat Versus the Big Apple",
-			"text" : "<p>An Adventure in Java<br>" +
-							"Featuring the creative \"talents\" of:<br>" + 
-							"Erin Donohue, Keelee James, and Rae Berg</p>" + 
-							"<p>Ported to JavaScript by Shawn McDonald</p>" + 
-							"<p>Are you ready to explore the city? Well, too bad, cause you're going to.</p>",
-			"choices" : [1]
+	"0" : { 
+		"title" : "Rat Versus the Big Apple",
+		"text" : "An Adventure in Java" +
+				"<br>Featuring the creative \"talents\" of:" + 
+				"<br>Erin Donohue, Keelee James, and Rae Berg" + 
+				"<br><br>Ported to JavaScript by Shawn McDonald" + 
+				"<br><br>Are you ready to explore the city? Well, too bad, cause you're going to.",
+		"choices" : [1]
 	},
 	//1 Wake up in the sewer.
 	"1" : {	"title" : "Sewer Entrance", 
