@@ -1,12 +1,16 @@
 function Game() {
 	this.events = new Events();
+	this.pages = pages;
 	this.current_event = this.events.start();
+	this.current_page = this.pages[0];
 }
 
 Game.prototype.start = function () {
 	//set current event
 	var start_event = this.events.start();
 	this.current_event = start_event;
+
+	this.current_page = this.pages[0];
 	//load it up onto screen
 	this.load_event();
 }
@@ -18,11 +22,13 @@ Game.prototype.load_event = function () {
 
 Game.prototype.load_text = function () {
 	var event = this.current_event;
+	var page = this.current_page;
 
 	$("#gametext").empty(); //clear out current game text
-
+	
 	//get new game text
-	var new_text = "<p>" + event.description + "</p>";
+	//var new_text = "<p>" + event.description + "</p>";
+	var new_text = "<p>" + page.text + "</p>";
 
 	//write out game text
 	$("#gametext").append(new_text);
@@ -51,6 +57,7 @@ Game.prototype.load_buttons = function () {
 
 			//load new event
 			game.current_event = event.exits[index];
+			game.current_page = game.pages[(game.current_page.choices[index])];
 			game.load_event();
 		});
 	}
