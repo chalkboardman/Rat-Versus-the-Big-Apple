@@ -6,10 +6,7 @@ function Game() {
 }
 
 Game.prototype.start = function () {
-	//set current event
-	var start_event = this.events.start();
-	this.current_event = start_event;
-
+	//set current page to first page
 	this.current_page = this.pages[0];
 	//load it up onto screen
 	this.load_page();
