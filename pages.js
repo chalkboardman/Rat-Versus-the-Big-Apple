@@ -451,6 +451,7 @@ var pages = {
 				"<br>You get lost and die. And you were so careful to get out of that train's way! Drat.", 
 		"choices" : []
 	},
+	//32 Hop onto the oncoming train.
 	"32" : {
 		"title" : "Hop onto the oncoming train.",
 		"text" : "Thinking fast, you time your jump perfectly and hop onto side of the train. " + 
@@ -472,6 +473,7 @@ var pages = {
 				"<br>but you also don't want to get caught and cause a scene in the train car.", 
 		"choices" : [33, 34]
 	},
+	//33 Go after the chips. (33>35, 0) (33>47, 1)
 	"33" : {
 		"title" : "Go after the chips.",
 		"text" : "You scurry across the car to the precious bag of chips. " + 
@@ -484,6 +486,7 @@ var pages = {
 				"<br>Want to get off here?", 
 		"choices" : [35, 47]
 	},
+	//34 Stay hidden and don't go after the chips. (34>35, 0) (34>47, 1)
 	"34" : {
 		"title" : "Stay hidden under the seat.",
 		"text" : "You eye the chips hungrily but decide not to risk it. " + 
@@ -493,6 +496,8 @@ var pages = {
 		"<br>Want to get off here?", 
 		"choices" : [35, 47]
 	},
+	//Tunnel Two: Broadway (The Lion King)
+    //35 Get off at Broadway. (33>35, 0) (34>35, 0)
 	"35" : {
 		"title" : "Get off at Broadway.",
 		"text" : "As soon as the doors open, you pop out of the train and onto the Broadway platform. " + 
@@ -521,6 +526,7 @@ var pages = {
 				"<br>Free admission for rats either way.", 
 		"choices" : [36, 77]
 	},
+	//36 The Lion King (35>36, 0) (66>36, 0)
 	"36" : {
 		"title" : "The Lion King",
 		"text" : "You are super psyched for the blockbuster epic that is The Lion King! " + 
@@ -538,6 +544,7 @@ var pages = {
 				"<br>Maybe you could find a nice empty hiding spot in the back.", 
 		"choices" : [37, 38]
 	},
+	//37 Choose to sit in the front and get crushed. [LOSE]
 	"37" : {
 		"title" : "Sit in the front.",
 		"text" : "You race to the front of the theater, excited for the curtain to rise. " + 
@@ -550,6 +557,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//38 Choose to sit in the back.
 	"38" : {
 		"title" : "Sit in the back.",
 		"text" : "You find a cozy hiding spot in the back of the theater, where you munch on a long-forgotten bag of candy. " + 
@@ -563,6 +571,7 @@ var pages = {
 				"<br>Want to steal a snack?", 
 		"choices" : [39, 40, 41]
 	},
+	//39 Steal the popcorn.
 	"39" : {
 		"title" : "Steal the popcorn.",
 		"text" : "Stealthily, you approach the bespectacled man with the popcorn. " + 
@@ -580,6 +589,7 @@ var pages = {
 		"<br>You lose.", 
 		"choices" : []
 	},
+	//40 Sneak the Clif bar.
 	"40" : {
 		"title" : "Sneak the Clif bar.",
 		"text" : "You sneak slowly up to the woman with the braided hair, eyes locked on the holy grail of the Clif Bar in the darkness. " + 
@@ -599,12 +609,14 @@ var pages = {
 				"<br>You gobble up the Clif Bar and try to watch the show as well, but you realize you can't really see so well back here.", 
 		"choices" : [42]
 	},
+	//41 Don't steal any food.
 	"41" : {
 		"title" : "Don't steal any food.",
 		"text" : "Eh, you're not that hungry. You can do without a snack for now. " + 
 				"<br>You focus on the show, but you find it's kinda hard to see all the way in the back of the theater.", 
 		"choices" :[42]
 	},
+	//42 Head to the front of the theatre from the back.
 	"42" : {
 		"title" : "The view is better in the front.",
 		"text" : "You scurry hastily to the front row of seats, careful not to disturb anyone or brush up against any legs. " + 
@@ -617,6 +629,7 @@ var pages = {
 				"<br>It does look pretty busy up there, though. Maybe that's not such a good idea.", 
 		"choices" : [43, 44]
 	},
+	//43 Stay seated in front and die. [LOSE]
 	"43" : {
 		"title" : "Better stay seated.",
 		"text" : "You snuggle into your spot in the front row. " + 
@@ -626,6 +639,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//44 Hop up on stage. (44>45, 0) (44>46, 1)
 	"44" : {
 		"title" : "Hop up on stage.",
 		"text" : "Putting aside your stage fright, you climb onto the stage during an exuberant performance " + 
@@ -640,6 +654,7 @@ var pages = {
 				"<br>The whole production immediately grinds to a halt.", 
 		"choices" : [45, 46]
 	},
+	//45 Try to run off the stage get killed by actors. [LOSE]
 	"45" : {
 		"title" : "Run off the stage before everyone freaks out and kills you.",
 		"text" : "You run off the stage but not fast enough. " + 
@@ -648,6 +663,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//46 Seize the moment! [WIN!!]
 	"46" : {
 		"title" : "Seize your moment of stardom and burst into song.",
 		"text" : "Without a moment's hesitation, you let your theatrical side take over. " + 
@@ -666,6 +682,8 @@ var pages = {
 				"<br>YOU WIN!", 
 		"choices" : []
 	},
+	//Tunnel Two: On the train (continued).
+	//47 Do NOT get off on Broadway, stay on the train. (33>47, 1) (34>47, 1)
 	"47" : {
 		"title" : "Stay on the train.",
 		"text" : "You stay on the train. It's pretty boring. " + 
@@ -676,6 +694,7 @@ var pages = {
 				"<br>Want to get off?", 
 		"choices" : [48, 49]
 	},
+	//48 Get off at City Hall.
 	"48" : {
 		"title" : "Get off at City Hall.",
 		"text" : "You pop off the subway at the City Hall stop. " + 
@@ -686,6 +705,7 @@ var pages = {
 				"<br>Better see what's on the surface.", 
 		"choices" : [50]
 	},
+	//49 Do NOT get off at City Hall, stay on the train a third time, janitor kills you. [LOSE]
 	"49" : {
 		"title" : "Stay on the train.",
 		"text" : "You stay on the train. All the people get off at City Hall, and the train rattles on, empty and echoing. " + 
@@ -696,6 +716,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//50 Climb the subway stairs. Choose City Hall (50>51, 0) or the Street (50>76, 1)
 	"50" : {
 		"title" : "Climb the subway stairs.",
 		"text" : "In front of you, you see a monumental (and to be honest, a bit ostentatious)" + 
@@ -706,6 +727,8 @@ var pages = {
 				"<br>On the other hand, maybe you could score some food from a street vendor.", 
 		"choices" : [51, 76]
 	},
+	//Tunnel Two: City Hall
+	//51 You enter City Hall. Face three room options: Bathroom (51>52, 0), Room 9 (51>55, 1), or Governor's Room (51>60, 2)
 	"51" : {
 		"title" : "Check out City Hall.",
 		"text" : "You stroll into City Hall. It is pristine and its shiny floors echo with every step you take. " + 
@@ -714,6 +737,7 @@ var pages = {
 				"<br>To your right is a sign for something called Room 9. Hmm. Where to, kiddo?", 
 		"choices" : [52, 55, 60]
 	},
+	//52 Check out the Bathroom.
 	"52" : {
 		"title" : "Let's go to the bathroom.",
 		"text" : "You're alone in the bathroom. You get a drink from one of the sink basins, but as you do so, a bumbling janitor comes in. " + 
@@ -724,6 +748,7 @@ var pages = {
 				"<br>You have only a fraction of a second to react. What do you want to do?", 
 		"choices" : [53, 54]
 	},
+	//53 Try to dart out of the way of the janitor's mop and fail. [LOSE]
 	"53" : {
 		"title" : "Dart out of the way!",
 		"text" : "Keeping your eyes locked on the mop head, you try to spring out of the way as the dreaded filthy mop crashes down to the floor." + 
@@ -734,6 +759,7 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//54 Run up the janitor's mop and escape. End up in Room 9 (55) (54>55, 0)
 	"54" : {
 		"title" : "Run up the mop!",
 		"text" : "You dart out of the bathroom as fast as you can, breathing hard. " + 
@@ -741,6 +767,8 @@ var pages = {
 				"<br>The sign on the door reads Room 9.", 
 		"choices" : [55]
 	},
+	//Tunnel Two: Room 9
+	//55 Enter Room 9.
 	"55" : {
 		"title" : "Room 9 sounds pretty cool.",
 		"text" : "You enter Room 9 and discover it is the Press Room. " + 
@@ -754,6 +782,7 @@ var pages = {
 				"<br>or try to obliquely edge your way around the room til you reach the precious morsel?", 
 		"choices" : [56, 59]
 	},
+	//56 Run for the sandwich in Room 9.
 	"56" : {
 		"title" : "Just run right for it! I'm hungry!",
 		"text" : "You figure that the journalists are so distracted by the strain of the 24-hour news cycle " + 
@@ -762,6 +791,7 @@ var pages = {
 				"<br>They watch you eat, every single journalist in the room has her or his eyes trained on you with a fiery intensity that is a bit disconcerting.", 
 		"choices" : [57]
 	},
+	//57 Keep eating the sandwich.
 	"57" : {
 		"title" : "Whatever, man. Just eat the sandwich. Be cool.",
 		"text" : "You finish off the piece of turkey sandwich, and all the journalists start typing madly into their laptops and smartphones. " + 
@@ -772,6 +802,7 @@ var pages = {
 				"<br>and down into the safety of the nearest sewer tunnel.", 
 		"choices" : [58]
 	},
+	//58 Well that went well? [LOSE/win?]
 	"58" : {
 		"title" : "Well, that went well!",
 		"text" : "The next morning, when reading the paper versions of the New York Times that no one wants anymore, " + 
@@ -787,6 +818,7 @@ var pages = {
 				"<br>You win?", 
 		"choices" : []
 	},
+	//59 Scale the perimeter instead of running right at food in Room 9. [LOSE]
 	"59" : {
 		"title" : "Scale the perimeter!",
 		"text" : "You carefully sneak your way around the room as the journalistic screaming continues. " + 
@@ -797,6 +829,8 @@ var pages = {
 				"<br>You lose.", 
 		"choices" : []
 	},
+	//Tunnel Two: Governor's Room
+	//60 To the Governor's Room!
 	"60" : {
 		"title" : "To the Governor's Room!",
 		"text" : "You make your way down the hall and to the Governor's Room. It is the fanciest room you've ever seen. " + 
@@ -823,5 +857,5 @@ var pages = {
 				"<br>a taste of home, but with an upscale twist. " + 
 				"<br>What would you like to eat first?", 
 		"choices" : [61, 63, 62]
-	}
+	},
 };
