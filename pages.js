@@ -858,4 +858,585 @@ var pages = {
 				"<br>What would you like to eat first?", 
 		"choices" : [61, 63, 62]
 	},
+	"61" : {
+		"title" : "Let's try the pâté!",
+		"text" : "You hungrily rush to the pâté and dig your paws into its soft, warm goodness. " + 
+				"<br>The sweet scent of meat dances with your nostrils and you take a moment—just a moment—to savor this exquisite moment before you dig in. " + 
+				"<br>Unfortunately for you, it is a moment too long, for just as you're about to dig into the pâté plate, a woman notices you sitting on the table. " + 
+				"<br>Per usual, she makes no effort to get to know you or to understand your situation, and instead shrilly screams, " + 
+				"<br>\"A rat!\"" + 
+				"<br>" + 
+				"<br>The party in the Governor's Room comes to a complete halt. " + 
+				"<br>The wealthy politicians look over, see you, your furry face covered in pâté, " + 
+				"<br>and take a moment to collectively process that a rat—a filthy rat!—is in their midst. " + 
+				"<br>You hop off the table and run away, while they are frozen in fear." + 
+				"<br>But they don't stay frozen for long. " + 
+				"<br>Before you can reach the exit, the politicians whip themselves into a wealthy, screaming frenzy " + 
+				"<br>and all try to flee the Governor's Room at once, as though it is on fire. " + 
+				"<br>You put everything you have into a last-ditch effort to escape through the door before the politicians trample you, but to no avail. " + 
+				"<br>Just a few feet from the door, you are crushed by a herd of stampeding politicians, " + 
+				"<br>desperate to get away from the very life they just took." + 
+				"<br>" + 
+				"<br>You lose.", 
+		"choices" : []
+	},
+	"62" : {
+		"title" : "Nothing says party like pigs in a blanket!",
+		"text" : "You definitely have to have those pigs in a blanket first, you decide. " + 
+				"<br>Who wants all this highbrow food when you can have simple hotdog perfection? " + 
+				"<br>You rush over to the plate and seize a hotdog in your hands, your heart whirring with excitement. " + 
+				"<br>You grin and drip the hotdog into the fanciest-looking gourmet mustard on the table and " + 
+				"<br>shove the whole thing in your mouth, barely bothering to chew it before swallowing." + 
+				"<br>You manage to pack away three more pigs in a blanket before trouble starts. " + 
+				"<br>Just as you're about to score pig in blanket number four, a woman notices you sitting on the table. " + 
+				"<br>Per usual, she makes no effort to get to know you or to understand your situation, " + 
+				"<br>and instead shrilly screams, \"A rat!\"" + 
+				"<br>" + 
+				"<br>The party in the Governor's Room comes to a complete halt. " + 
+				"<br>The wealthy politicians look over, see you—your furry face covered in mustard and hotdog crumbs—" + 
+				"<br>and take a moment to collectively process that a rat is in their midst. " + 
+				"<br>You hop off the table and run away, while they are frozen in fear. " + 
+				"<br>But they don't stay frozen for long. " + 
+				"<br>The entire crowd begins screaming, and a few of the more hardened fiscal conservatives " + 
+				"<br>reflexively remove one shoe from their feet and rush forward to attack you." + 
+				"<br>The screams and terror are both chaotic and intoxicating, as two senior city council members " + 
+				"<br>attempt to bash your head in with expensive shoes. " + 
+				"<br>You duck and dance around them, taunting them as you fly past." + 
+				"<br>\"God damned rat!\" cry the council members. \"Get it!\"" + 
+				"<br>" + 
+				"<br>But it's hopeless. You're much faster than these weathered old men and they know it. " + 
+				"<br>You scurry gleefully from the room, stopping to grab one more pig in a blanket and shove it in your mouth before you go." + 
+				"<br>You hear the politicians in the Governor's Room discussing a janitor and an exterminator, " + 
+				"<br>so you know you must move quickly and find a good hiding place. " + 
+				"<br>You rush down the hall to your right and into the room labeled Room 9.", 
+		"choices" : [55]
+	},
+	"63" : {
+		"title" : "Get involved with that cheese plate!",
+		"text" : "You're a rat, so of course you're going for the fancy cheese plate. " + 
+				"<br>It is literally a mountain of succulent cheese. " + 
+				"<br>How can you say no?" + 
+				"<br>Someday, when the creators of this game don't have tons of assignments due, there will be a nice description of the cheese plate. " + 
+				"<br>Won't that be nice? In the meantime, you're at the cheese plate. Aww yeah! " + 
+				"<br>You grab a delicious piece of white cheese from the base of the pyramid." + 
+				"<br>Just as you're about to put the cheese cube in your mouth, you make eye contact with Mayor Michael Bloomberg himself, " + 
+				"<br>who is seated across the room. You recognize him from television and the newspaper. " + 
+				"<br>You and Bloomberg lock eyes for what feels like forever, " + 
+				"<br>but in reality is probably less than a fraction of a second. " + 
+				"<br>His stare bores through you to your very soul. " + 
+				"<br>Basically, you and The Bloom share what we might call \"A Moment.\"" + 
+				"<br>His look says one thing and one thing only: Don't you dare.", 
+		"choices" : [64, 67]
+	},
+	"64" : {
+		"title" : "Put the cheese piece back on the plate.",
+		"text" : "Timidly, you drop the piece of white, delicious cheese back on the cheese pyramid and wash your whiskers nervously. " + 
+				"<br>It doesn't appear that anyone else has seen you, but Bloomberg certainly has. " + 
+				"<br>He won't take his eyes off you. " + 
+				"<br>You're unsure what to do, so you sit frozen on the table, unable to blink." + 
+				"<br>Finally, Bloomberg excuses himself from a conversation he was having with a large man with an obnoxious laugh. " + 
+				"<br>He strolls over to you, nonchalant but commanding. He bends down to eye level with you, " + 
+				"<br>and his eyes are hard and cold. They are the eyes of a man who really doesn't like soda." + 
+				"<br>\"I'm going to have to ask you to leave, sir,\" " + 
+				"<br>Bloomberg says in a tone that suggests he is not \"asking\" at all. " + 
+				"<br>His eyes burn like someone who has been both a Democrat and a Republican and lived to tell the tale. " + 
+				"<br>He is not a man to be trifled with.", 
+		"choices" : [65]
+	},
+	"65" : {
+		"title" : "What can you say? You'd better leave.",
+		"text" : "You exit the Governor's Room hastily, not wanting to cause a scene. " + 
+				"<br>You notice that Bloomberg shuts the door behind you. " + 
+				"<br>You trudge out of City Hall, dejected. You didn't even get one lousy piece of cheese out of the whole shindig!" + 
+				"<br>You sit outside on the Civic Center sidewalk and ponder your next move. " + 
+				"<br>How about hopping a train to somewhere less stuffy and self-absorbed? " + 
+				"<br>You heard there was a Siamese who was throwing a pretty sweet party somewhere on Broadway.", 
+		"choices" : [66]
+	},
+	"66" : {
+		"title" : "Let's blow this popsicle stand and get on the train.",
+		"text" : "You hop a lift on the nearest baby stroller and hide in a diaper bag until your vehicle approaches the subway terminal. " + 
+				"<br>You leap off the stroller, parent and child totally oblivious to your presence, " + 
+				"<br>and deftly scramble down the stairs into the subway station." + 
+				"<br>You wait on the platform for the N train and hop on the first train headed up to Broadway. " + 
+				"<br>The train is pretty crowded, but everyone has an iPhone and no sense of self-awareness, so you go unnoticed. " + 
+				"<br>You wash your face, lament how utterly dull the Mayor's stupid party was, " + 
+				"<br>and wait for the conductor to announce the 23rd street Broadway stop." + 
+				"<br>" + 
+				"<br>As soon as the doors open, you pop out of the train and onto the Broadway platform. " + 
+				"<br>It is quite bustling, and you have to take great care to ensure your tail isn't stepped on. " + 
+				"<br>You pause to urinate on a Macy's advertisement—just because—and then scurry up the subway stairs to street level. " + 
+				"<br>A few people shriek or gasp at the sight of you, but really, that's their problem not yours." + 
+				"<br>You have reached the heart of the Broadway theater district, which is alive with people, cars, lights, and noise. " + 
+				"<br>" + 
+				"<br>Tickets litter the ground, suggesting that a show just let out a short while ago. " + 
+				"<br>You take a good look around you, as you've never before been to this part of town. " + 
+				"<br>There is so much activity, so many things to do and smell and eat, that you're not really sure what to do first." + 
+				"<br>You figure that since you're in the greatest theater district in the world, you might as well go check out a show. " + 
+				"<br>This way when you return to the sewer, you will definitely be able to impress the others. " + 
+				"<br>Now the question is, which show do you see? " + 
+				"<br>" + 
+				"<br>There are endless options in this part of town." + 
+				"<br>In front of you, you notice a gargantuan light-up sign for the Lion King musical. " + 
+				"<br>You've heard a lot about this musical, and you did dig the movie. " + 
+				"<br>That could be fun. On the other side of the street is a small, almost forgotten theater. " + 
+				"<br>The outside is dark, but judging from the people streaming into it, the theater is open for business and showing something quite popular. " + 
+				"<br>You glance at the marquee outside the humble theater. " + 
+				"<br>It reads: \"The Clam, It Broods.\"" + 
+				"<br>Hmm, which show do you want to see? " + 
+				"<br>Free admission for rats either way.", 
+		"choices" : [36, 77]
+	},
+	"67" : {
+		"title" : "Forget Bloomberg. Eat the cheese piece.",
+		"text" : "Ugh, Bloomberg! So paternalistic and bossy! " + 
+				"<br>Defiantly, you pop the cheese piece into your mouth, and chew it slowly, savoring its sweet, tangy taste on your tongue. " + 
+				"<br>Never breaking eye contact with the mayor, you proceed to rub your hands on several other cheese pieces, " + 
+				"<br>and even sneeze on what you know is absurdly expensive gouda. " + 
+				"<br>You snicker to yourself and wipe your tail on some brie." + 
+				"<br>Bloomberg looks tense, and even from far away, you can see that a vein in his neck is bulging. " + 
+				"<br>Some of the other politicians in the Governor's Room have noticed your presence now, " + 
+				"<br>and a few of them show visible signs of terror." + 
+				"<br>" + 
+				"<br>One of the city council members, an unpleasant man with white hair and a sour face, " + 
+				"<br>starts toward you, ready to attack. Before the man can charge you, however, " + 
+				"<br>Bloomberg puts his hand on the man's arm." + 
+				"<br>\"Let me handle this,\" whispers Mayor Bloomberg, his voice cold and steely. " + 
+				"<br>\"I've been dealing with the rat problem in this city for years.\"" + 
+				"<br>He stands up from his seat at the table and strolls confidently, commandingly, " + 
+				"<br>toward you and that fateful cheese plate. " + 
+				"<br>The day of reckoning has come.", 
+		"choices" : [68]
+	},
+	"68" : {
+		"title" : "It's on!",
+		"text" : "Bloomberg reaches the banquet table, and you are frozen in fear. " + 
+				"<br>Your heart beats sickeningly in your chest, " + 
+				"<br>and you fear you may throw up the lovely cheese you just ate. " + 
+				"<br>He stares at you, and his face betrays no emotion beyond sheer determination and strength of will. " + 
+				"<br>You have no idea what the mayor has up his well-tailored sleeve. " + 
+				"<br>You manage a quick sweeping glance around the room. " + 
+				"<br>None of the other politicians comes toward you; it's just you and that maverick Michael Bloomberg." + 
+				"<br>" + 
+				"<br>However, there is an older man standing just near the other side of the table. " + 
+				"<br>Perhaps you could take a hostage and turn the situation to your advantage. " + 
+				"<br>Then again, you are vastly out-numbered. " + 
+				"<br>Maybe it's best to rely on the element of surprise. " + 
+				"<br>How do you proceed?", 
+		"choices" : [69, 70, 71]
+	},
+	"69" : {
+		"title" : "Take the old man hostage.",
+		"text" : "Before Bloomberg can take one more step toward you, " + 
+				"<br>you dart away from the cheese plate and race toward the feeble old man near the table. " + 
+				"<br>You scurry up his arm and try to grab him by the throat. " + 
+				"<br>The man screams in terror and wobbles unsteadily on his feet." + 
+				"<br>Though the man is old and weak, he is still much, much larger and stronger than you, " + 
+				"<br>and he easily manages to shake you loose from his shirt and fling you across the room. " + 
+				"<br>You're just a rat, remember?" + 
+				"<br>" + 
+				"<br>The mob of angry politicians descends upon you and crushes you like an unpleasant Senate bill. " + 
+				"<br>As you take your last breath, you see Mayor Bloomberg standing over you, " + 
+				"<br>smiling and eating a piece of cheese." + 
+				"<br>" + 
+				"<br>You lose.", 
+		"choices" : []
+	},
+	"70" : {
+		"title" : "Rush Bloomberg and claw his eyes.",
+		"text" : "Without a moment's hesitation, you throw yourself at the strongest advocate for gun control in New York City. " + 
+				"<br>You launch yourself into the air and land with a mighty thump right onto Bloomberg's face. " + 
+				"<br>Your heart is beating faster than you ever knew it could; " + 
+				"<br>you must fight for your life, so you give it everything you have. " + 
+				"<br>" + 
+				"<br>Without even thinking, you claw furiously at Bloomberg's eyes and take a large bite of his nose. " + 
+				"<br>You emit your most ferocious squeak and your tail whips around as though possessed." + 
+				"<br>Bloomberg screams as blood pours from the bite on his nose, " + 
+				"<br>but he manages to pull you off of himself and throw you hard into the floor. " + 
+				"<br>The shock of hitting the floor stuns you, and a sharp pain shoots through your back and neck. " + 
+				"<br>You instinctively protect your stomach with your paws, " + 
+				"<br>but you're in a lot of pain, and getting up is not easy." + 
+				"<br>" + 
+				"<br>Though he managed to dislodge you, Mayor Bloomberg has problems of his own. " + 
+				"<br>He is badly wounded and cannot see. He stumbles around the room, feeling with his feet to try to find you." + 
+				"<br>\"Where is that rat?!\" " + 
+				"<br>he cries bitterly as the other politicians rush to his aid." + 
+				"<br>\"We'll get the rat, sir,\" they assure him." + 
+				"<br>Bloomberg wipes the blood from his face and as he feels around blindly for you, " + 
+				"<br>he immediately begins dictating an angry Op-Ed piece to be published in the New York Times tomorrow. " + 
+				"<br>An aide hurriedly takes notes on everything Bloomberg says." + 
+				"<br>" + 
+				"<br>\"The rat infestation in this city is out of control!\" " + 
+				"<br>Bloomberg roars, tripping over a chair. \"Underline that. 'Out of control!'\"" + 
+				"<br>After a couple excruciating seconds, you manage to get up from the floor and, " + 
+				"<br>despite the pain, you flee from the Governor's Room. " + 
+				"<br>Your body is sore, but you are resilient, and you know, given time and patience, you will make a full recovery. " + 
+				"<br>Can Bloomberg say the same? You smile to yourself and hurry out of City Hall " + 
+				"<br>and back to the bosom of the cool, dark sewer." + 
+				"<br>Unfortunately, your troubles aren't over so easily. " + 
+				"<br>" + 
+				"<br>The next day, the front page of the New York times is brimming with bad press about the rat problem in New York City. " + 
+				"<br>Bloomberg's irate Op-ed piece, \"A Modern Black Plague,\" is the main headline above the fold." + 
+				"<br>You study the paper carefully, glad you took those community literacy courses in the Bronx years ago, " + 
+				"<br>and you know it's not good. " + 
+				"<br>The city is launching an all-out war on rats and other pests immediately." + 
+				"<br>The aggressive city-wide cleaning and sanitation campaign ultimately destroys your home. " + 
+				"<br>All your friends and family are brutally murdered in their beds " + 
+				"<br>by faceless exterminators wielding toxic chemicals—" + 
+				"<br>all because you just had to sample that cheese plate. Nice going." + 
+				"<br>" + 
+				"<br>You win?", 
+		"choices" : []
+	},
+	"71" : {
+		"title" : "Wait for Bloomberg to come to you.",
+		"text" : "You figure you'd better see just way the mayor is up to before you make any sudden decisions." + 
+				"<br>Bloomberg leans down at the table so that you and the most powerful man in the city are at eye level." + 
+				"<br>\"Hello, little rat,\" he whispers softly, coldly. \"We meet again.\"" + 
+				"<br>Again? You're puzzled. You dare not take your beady oil drop eyes off him for even a moment." + 
+				"<br>\"You remember me, don't you?\" Bloomberg's voice has a superficially playful tone, but under the surface it sounds tired and hollow. " + 
+				"<br>His eyes are ringed with heavy dark circles. " + 
+				"<br>" + 
+				"<br>\"Or maybe you don't remember me,\" he muses. " + 
+				"<br>\"Maybe you don't remember how you got that scar on your left paw.\"" + 
+				"<br>You risk a glance down at your left paw, which, true to the mayor's words, bears a long, crooked scar. " + 
+				"<br>You shudder to think about it, remembering how hungry you were, the desperate hunt for garbage. " + 
+				"<br>You remember the feel of cold metal under your paws as you grabbed onto the garbage truck, " + 
+				"<br>not realizing it was for recycling only. " + 
+				"<br>You never would have been so careless had you not been so hungry." + 
+				"<br>That truck, that dreaded recycling truck! " + 
+				"<br>Your paw still stings in pain when you think about it." + 
+				"<br>" + 
+				"<br>\"Yes,\" whispers Bloomberg. \"Remember how you fell from the truck? Remember how you smashed into the pavement? " + 
+				"<br>And remember how the truck almost hit you?\" The mayor laughs softly. " + 
+				"<br>\"I don't need to remind you. I can see in your eyes that you remember. Little rat.\"" + 
+				"<br>Involuntarily, you hide your paw under your body. " + 
+				"<br>How could Bloomberg know about the time the recycling truck nearly ruined your hand, nearly took your life?" + 
+				"<br>Unless..." + 
+				"<br>" + 
+				"<br>Bloomberg's eyes are alight with malicious glee. " + 
+				"<br>\"Yes, little rat. Yes. That was my recycling program, little rat. " + 
+				"<br>And I was the one driving that truck all those years ago.\"" + 
+				"<br>The mayor blinks and smiles his wide, political smile. " + 
+				"<br>\"And my only regret is that I only damaged your paw—instead of taking your life.\"" + 
+				"<br>" + 
+				"<br>Your entire body is shaking with rage so badly that you fear you might pass out. " + 
+				"<br>That monster! That barbaric monster! He mutilated your body—and is proud of this treachery!" + 
+				"<br>This cannot stand! You have to do something! " + 
+				"<br>You must make this demon pay for his crimes!" + 
+				"<br>What do you do?", 
+		"choices" : [72, 73, 74, 75]
+	},
+	"72" : {
+		"title" : "Call your fellow rats for help.",
+		"text" : "You emit a mighty squeak and blink your eyes five times in rapid succession. " + 
+				"<br>The power of the secret rat signal has been unleashed!" + 
+				"<br>" + 
+				"<br>A few tense seconds pass, during which you're sure that all your rodent comrades will come bursting through the doors, " + 
+				"<br>rushing to your aid. The politicians stand around awkwardly, not sure how to proceed." + 
+				"<br>A few more seconds pass and it becomes clear that no one is coming. " + 
+				"<br>You squeak and again blink your eyes five times, but nothing happens. " + 
+				"<br>Bloomberg has a hearty laugh and kills you. " + 
+				"<br>Then for fun, he changes the legal smoking age in New York to 21." + 
+				"<br>" + 
+				"<br>You lose.", 
+		"choices" : []
+	},
+	"73" : {
+		"title" : "Charge and aim for the eyes.",
+		"text" : "Without a moment's hesitation, you throw yourself at the strongest advocate for gun control in New York City. " + 
+				"<br>You launch yourself into the air and land with a mighty thump right onto Bloomberg's face. " + 
+				"<br>Your heart is beating faster than you ever knew it could; " + 
+				"<br>you must fight for your life, so you give it everything you have. " + 
+				"<br>" + 
+				"<br>Without even thinking, you claw furiously at Bloomberg's eyes and take a large bite of his nose. " + 
+				"<br>You emit your most ferocious squeak and your tail whips around as though possessed." + 
+				"<br>Bloomberg screams as blood pours from the bite on his nose, " + 
+				"<br>but he manages to pull you off of himself and throw you hard into the floor. " + 
+				"<br>The shock of hitting the floor stuns you, and a sharp pain shoots through your back and neck. " + 
+				"<br>You instinctively protect your stomach with your paws, " + 
+				"<br>but you're in a lot of pain, and getting up is not easy." + 
+				"<br>" + 
+				"<br>Though he managed to dislodge you, Mayor Bloomberg has problems of his own. " + 
+				"<br>He is badly wounded and cannot see. He stumbles around the room, feeling with his feet to try to find you." + 
+				"<br>\"Where is that rat?!\" " + 
+				"<br>he cries bitterly as the other politicians rush to his aid." + 
+				"<br>\"We'll get the rat, sir,\" they assure him." + 
+				"<br>Bloomberg wipes the blood from his face and as he feels around blindly for you, " + 
+				"<br>he immediately begins dictating an angry Op-Ed piece to be published in the New York Times tomorrow. " + 
+				"<br>An aide hurriedly takes notes on everything Bloomberg says." + 
+				"<br>" + 
+				"<br>\"The rat infestation in this city is out of control!\" " + 
+				"<br>Bloomberg roars, tripping over a chair. \"Underline that. 'Out of control!'\"" + 
+				"<br>After a couple excruciating seconds, you manage to get up from the floor and, " + 
+				"<br>despite the pain, you flee from the Governor's Room. " + 
+				"<br>Your body is sore, but you are resilient, and you know, given time and patience, you will make a full recovery. " + 
+				"<br>Can Bloomberg say the same? You smile to yourself and hurry out of City Hall " + 
+				"<br>and back to the bosom of the cool, dark sewer." + 
+				"<br>Unfortunately, your troubles aren't over so easily. " + 
+				"<br>" + 
+				"<br>The next day, the front page of the New York times is brimming with bad press about the rat problem in New York City. " + 
+				"<br>Bloomberg's irate Op-ed piece, \"A Modern Black Plague,\" is the main headline above the fold." + 
+				"<br>You study the paper carefully, glad you took those community literacy courses in the Bronx years ago, " + 
+				"<br>and you know it's not good. " + 
+				"<br>The city is launching an all-out war on rats and other pests immediately." + 
+				"<br>The aggressive city-wide cleaning and sanitation campaign ultimately destroys your home. " + 
+				"<br>All your friends and family are brutally murdered in their beds " + 
+				"<br>by faceless exterminators wielding toxic chemicals—" + 
+				"<br>all because you just had to sample that cheese plate. Nice going." + 
+				"<br>" + 
+				"<br>You win?", 
+		"choices" : []
+	},
+	"74" : {
+		"title" : "Throw soda at Bloomberg's face.",
+		"text" : "Quick as a flash, you pop open the can of soda with your nimble fingers. " + 
+				"<br>With your fiercest battle squeak, you hold the can tightly and fling the soda at Bloomberg." + 
+				"<br>As it happens, though Bloomberg is immune to many forms of illness, death, and dismemberment, " + 
+				"<br>his one weakness is soda. Soda is to Bloomberg as kryptonite is to Superman; that kind of thing. " + 
+				"<br>" + 
+				"<br>As soon as the soda makes contact with his flesh, he lets out a high-pitched, inhuman scream, and steam rises from his skin. " + 
+				"<br>You hold onto the rapidly emptying soda can and boldly march closer to the mayor. " + 
+				"<br>You fling the last of the soda right into his eyes and drop the can." + 
+				"<br>" + 
+				"<br>Bloomberg shrieks and howls, dropping to the floor and foaming at the mouth like a rabid animal. " + 
+				"<br>Everywhere that the soda has made contact with his skin, you notice, " + 
+				"<br>is covered in angry green boils, and steam continues to rise from his entire body. " + 
+				"<br>After only a few seconds, his entire form dissolves into nothing, " + 
+				"<br>and where Mayor Michael Bloomberg used to stand lies only his expensive suit, in an undignified heap." + 
+				"<br>" + 
+				"<br>Without waiting for a reaction from the other politicians, you bolt from the Governor's Room, " + 
+				"<br>flee City Hall, and return to the safety of the sewer you know and love. " + 
+				"<br>You don't want to think about the therapy bill you'll have to pay to unsee the horrors of a man melting before your very eyes—" + 
+				"<br>but you do know that you have destroyed one of the greatest threats ever known to rats, and thus..." + 
+				"<br>" + 
+				"<br>YOU WIN!", 
+		"choices" : []
+	},
+	"75" : {
+		"title" : "Throw cheese cubes from the cheese plate.",
+		"text" : "With both hands, you grab cubes of cheese from the mighty cheese pyramid" + 
+				"<br> and start lobbing them directly at Bloomberg's eyes with all the rage and fire you can summon." + 
+				"<br>Unfortunately, Bloomberg is too deft for you, and he simply catches the cheese cubes in his mouth." + 
+				"<br>\"These cheese cubes are taxpayer funded,\" he grins, leaning in to face you. " + 
+				"<br>\"Did you really think I would let them go to waste?\"" + 
+				"<br>" + 
+				"<br>He laughs and grabs your tiny body and squeezes it as though you're an employee of his media empire, " + 
+				"<br>draining the life from your veins. " + 
+				"<br>" + 
+				"<br>The last thing you see is Mayor Bloomberg, smiling merrily and casually popping " + 
+				"<br>a Munster cheese cube into his mouth." + 
+				"<br>" + 
+				"<br>You lose.", 
+		"choices" : []
+	},
+	"76" : {
+		"title" : "Eh, forget it. Keep walking down the street.",
+		"text" : "You decide to keep walking down the street. Where are those cheese-covered soft pretzels you smelled earlier? " + 
+				"<br>You're just about to find out when you get crushed during a stampede of political protestors " + 
+				"<br>demanding that the Yankees be allowed to participate in the World Series, " + 
+				"<br>despite not having qualified for the playoffs this year. You die." + 
+				"<br>" + 
+				"<br>You lose.", 
+		"choices" : []
+	},
+	"77" : {
+		"title" : "The Clam, It Broods",
+		"text" : "You head for the small theater showing the mysterious \"The Clam, It Broods\" play. " + 
+				"<br>The promotional poster features a single clam against a black background. Seems pretty artsy." + 
+				"<br>The theater is small and run-down, " + 
+				"<br>but it is bustling with well-dressed old people whispering to each other in excited tones." + 
+				"<br>You enter the theater, the lights go down, and the play begins. " + 
+				"<br>You settle into a seat near the front. " + 
+				"<br>None of the audience members notices you in the darkness." + 
+				"<br>Onto the stage rushes a woman, who immediately begins weeping and screaming in German. " + 
+				"<br>Your German is extremely rusty, as you haven't hung out in that part of the city for a while, " + 
+				"<br>so you can't understand most of what is being shouted. " + 
+				"<br>Something about suffering and endless torment." + 
+				"<br>" + 
+				"<br>The woman lights eight candles and launches into an interpretive dance sequence, " + 
+				"<br>yelling repeatedly that she is a tree. " + 
+				"<br>Two men in bear costumes join her on the stage and dance in a spastic, twitchy fashion. " + 
+				"<br>They chant in German about socialism. " + 
+				"<br>A large animatronic dolphin descends from the ceiling, water spurting from its mechanical blowhole." + 
+				"<br>This might possibly be the artsiest thing you've ever seen. " + 
+				"<br>What do you think of the play so far?",
+		"choices" : [78, 79]
+	},
+	"78" : {
+		"title" : "Ugh, so boring and pretentious!",
+		"text" : "You don't have to be fluent in German to know that this play sucks. " + 
+				"<br>As a group of fourteen dwarves wearing traffic cones on their heads emerges on the stage, " + 
+				"<br>you feel yourself nodding off." + 
+				"<br>You slip into a dream in which you are flying high above the city at night. " + 
+				"<br>" + 
+				"<br>Below you, the taxi cabs are dimly lit yellow ants. " + 
+				"<br>You soar through the clouds, weightless and free, feeling the cool wind through your clean, unmatted fur." + 
+				"<br>You fly out of the city and over the countryside. " + 
+				"<br>You've never seen a rural landscape before—rolling green hills and valleys of wildflowers and all that—" + 
+				"<br>so you swoop down to the ground to check it out." + 
+				"<br>You wander around the valley of wildflowers, feeling the soft green grass under your feet. " + 
+				"<br>The air is heavy with dew. In the middle of the valley is an enormous tar pit. " + 
+				"<br>You're not sure why, but you are magnetically drawn to it. " + 
+				"<br>" + 
+				"<br>You want to walk away from the thick vat of black, bubbling tar, but instead, you hurry toward it." + 
+				"<br>The tar is hot, so hot that it feels like it's burning your skin even from the edge of the pit. " + 
+				"<br>The endless black sea is hypnotic, and before you can stop yourself—" + 
+				"<br>if you ever could stop yourself—you walk right into the vat of hot tar." + 
+				"<br>As soon as you do this, the tar scalds your skin and you scream, " + 
+				"<br>secure in the knowledge that you have made a huge mistake. " + 
+				"<br>You struggle to release yourself from the tar, but it sticks tightly to your flesh " + 
+				"<br>and you sink deeper into the pit, as though trapped in quicksand." + 
+				"<br>" + 
+				"<br>You wake up suddenly and find yourself back in the artsy theater where The Clam, It Broods was playing. " + 
+				"<br>You are relieved that no hot tar is burning your skin. " + 
+				"<br>But you realize, to your horror, that it wasn't a dream after all. " + 
+				"<br>You look down and discover that you are ensnared in a glue trap in a corner of the theater." + 
+				"<br>You pull hard against the glue, but you are solidly stuck in the trap. " + 
+				"<br>You squeak for help, but no one hears you. " + 
+				"<br>If they could hear you, they wouldn't care anyway. " + 
+				"<br>You live out the rest of your anguished, starving days stuck in the glue." + 
+				"<br>You really should be more careful when sleepwalking." + 
+				"<br>" + 
+				"<br>You lose.",
+		"choices" : []
+	},
+	"79" : {
+		"title" : "Innovative! I love it!",
+		"text" : "You don't have to be fluent in German to know that The Clam, It Broods is awesome! " + 
+				"<br>The costumes are striking, the casting is both intuitive and daring, and the directing is on point. " + 
+				"<br>Overall, a stunning piece of stagecraft. " + 
+				"<br>You can't wait to tell all the other rats about it." + 
+				"<br>You are totally absorbed in the play, and before you know it, it's time for the intermission. " + 
+				"<br>What do you want to do?", 
+		"choices" : [80, 81]
+	},
+	"80" : {
+		"title" : "Check the floor of the theater for food.",
+		"text" : "There's bound to be some tasty morsels dropped on the floor of this theater. " + 
+				"<br>You scurry around and finally spot a delectable-looking piece of brownie, only a few days old. " + 
+				"<br>You rush over to it. Unfortunately, as you're heading for the brownie, " + 
+				"<br>you accidentally scurry across the foot of one Mr. Harrison von Jenkins-Dominguez, " + 
+				"<br>renowned theater critic for the New York Times. " + 
+				"<br>" + 
+				"<br>He hasn't particularly been enjoying the play, and he is certainly not happy to see you." + 
+				"<br>\"A rat!\" he screams, like everyone else, without even bothering to get to know you. " + 
+				"<br>\"A disgusting rat!\"" + 
+				"<br>" + 
+				"<br>Immediately a slender, nervous, bespectacled man rushes over: the owner of the theater. " + 
+				"<br>He is desperate to placate Mr. von Jenkins-Dominguez, " + 
+				"<br>as he is slavishly dependent on The Clam, It Broods getting a good NYT review." + 
+				"<br>\"This theater is almost as revolting as the play!\" booms Harrison von Jenkins-Dominguez. " + 
+				"<br>\"I've had it up to here with this production!\" " + 
+				"<br>" + 
+				"<br>You watch the drama unfold, transfixed by the bellowing, overweight critic." + 
+				"<br>The theater owner tsks sympathetically. " + 
+				"<br>\"Please, sir, don't let this impact your review of the play in any way! " + 
+				"<br>That rat has nothing to do with this production!\"" + 
+				"<br>Without a moment's hesitation, the wiry theater owner slams his foot down upon your head, " + 
+				"<br>killing you instantly." + 
+				"<br>\"You see, Mr. von Jenkins-Dominguez,\" says the theater owner. " + 
+				"<br>\"The rat is no longer a problem.\"" + 
+				"<br>" + 
+				"<br>You lose.",
+		"choices" : []
+	},
+	"81" : {
+		"title" : "Go out in the lobby and socialize.",
+		"text" : "You head into the lobby, " + 
+				"<br>which is teeming with well-dressed, educated theater patrons sipping expensive booze. " + 
+				"<br>In the corner of the room, you spot a tall, thin man sipping a glass of red wine. " + 
+				"<br>He stands alone and doesn't talk to anyone." + 
+				"<br>" + 
+				"<br>Over to your right, you spot two women, a blonde and a brunette, " + 
+				"<br>having an animated conversation while clutching glasses of champagne. " + 
+				"<br>Whom would you like to talk to?", 
+		"choices" : [82, 83]
+	},
+	"82" : {
+		"title" : "The man in the corner.",
+		"text" : "Well, unfortunately, the man in the corner only speaks German. " + 
+			"<br>Looks like you'll have to talk to the ladies.", 
+		"choices" : [83]
+	},
+	"83" : {
+		"title" : "Chat up the ladies.",
+		"text" : "You scurry over to the two bubbly women. " + 
+				"<br>They are discussing The Clam, It Broods with both joy and intensity. " + 
+				"<br>At first, they are a little weirded out that a rat has joined their conversation, " + 
+				"<br>but they are drunk enough that it doesn't really bother them." + 
+				"<br>" + 
+				"<br>\"What do you think of the play so far?\" asks the brunette, a stocky woman with a wide, warm smile." + 
+				"<br>You tell the women that you are totally digging it. " + 
+				"<br>You explain that you find the use of negative space on the stage to be particularly compelling, " + 
+				"<br>and the scene with the football players dressed as neon green orca whales was both innovative and also exactly what you'd expect. " + 
+				"<br>The play does a marvelous job, you explain, of exploring the tension inherent in the subjective perspective, " + 
+				"<br>while still managing to foster an experience that is universally relatable." + 
+				"<br>" + 
+				"<br>\"I completely agree,\" gushes the brunette. " + 
+				"<br>\"This is really an exceptional piece of theater.\"" + 
+				"<br>\"You really have a unique perspective,\" says the blonde. " + 
+				"<br>\"Your commentary is very insightful, without relying on tired theatrical criticism cliches.\"" + 
+				"<br>\"You know what he should do, right?\" beams the brunette to her friend. " + 
+				"<br>\"He must start a theater blog!\"" + 
+				"<br>\"Oh absolutely,\" says the blonde, noddding her head vigorously. " + 
+				"<br>\"My sister just started a theater blog, and she's a complete idiot. " + 
+				"<br>But you...you could really make something of it.\"" + 
+				"<br>What do you think of this idea? Wanna be a blogger?", 
+		"choices" : [84, 85]
+	},
+	"84" : {
+		"title" : "Nah, typing is a chore.",
+		"text" : "You politely tell the tipsy women that you're flattered, " + 
+				"<br>but you're not really into the whole blogging scene. " + 
+				"<br>Andrew Sullivan does more than enough of that for both of you. " + 
+				"<br>" + 
+				"<br>You slip away and decide to head into the theater to hunt for food." + 
+				"<br>There's bound to be some tasty morsels dropped on the floor of this theater. " + 
+				"<br>You scurry around and finally spot a delectable-looking piece of brownie, only a few days old. " + 
+				"<br>You rush over to it. Unfortunately, as you're heading for the brownie, " + 
+				"<br>you accidentally scurry across the foot of one Mr. Harrison von Jenkins-Dominguez, " + 
+				"<br>renowned theater critic for the New York Times. " + 
+				"<br>" + 
+				"<br>He hasn't particularly been enjoying the play, and he is certainly not happy to see you." + 
+				"<br>\"A rat!\" he screams, like everyone else, without even bothering to get to know you. " + 
+				"<br>\"A disgusting rat!\"" + 
+				"<br>" + 
+				"<br>Immediately a slender, nervous, bespectacled man rushes over: the owner of the theater. " + 
+				"<br>He is desperate to placate Mr. von Jenkins-Dominguez, " + 
+				"<br>as he is slavishly dependent on The Clam, It Broods getting a good NYT review." + 
+				"<br>\"This theater is almost as revolting as the play!\" booms Harrison von Jenkins-Dominguez. " + 
+				"<br>\"I've had it up to here with this production!\" " + 
+				"<br>" + 
+				"<br>You watch the drama unfold, transfixed by the bellowing, overweight critic." + 
+				"<br>The theater owner tsks sympathetically. " + 
+				"<br>\"Please, sir, don't let this impact your review of the play in any way! " + 
+				"<br>That rat has nothing to do with this production!\"" + 
+				"<br>Without a moment's hesitation, the wiry theater owner slams his foot down upon your head, " + 
+				"<br>killing you instantly." + 
+				"<br>\"You see, Mr. von Jenkins-Dominguez,\" says the theater owner. " + 
+				"<br>\"The rat is no longer a problem.\"" + 
+				"<br>" + 
+				"<br>You lose.",
+		"choices" : []
+	},
+	"85" : {
+		"title" : "Totally! RatPlayz.tumblr.com, baby!",
+		"text" : "A theater blog! It's an excellent idea! " + 
+				"<br>You thank the women for the suggestion and hurry into the theater to watch the rest of The Clam, It Broods. " + 
+				"<br>You get home, start a tumblr, and write a glowing review of it. " + 
+				"<br>The words flow easily out of your paws and into your rat-sized keyboard." + 
+				"<br>" + 
+				"<br>The blog, as it happens, is a huge success. " + 
+				"<br>People are hungry for theatrical criticism from the rodent perspective. " + 
+				"<br>You become hugely famous and influential, " + 
+				"<br>your witty, honest reviews can make or break any play in the city. " + 
+				"<br>Your popularity soars: you have over a million Twitter followers overnight, " + 
+				"<br>your own fragrance line, an appearance on Charlie Rose, " + 
+				"<br>and a recurring guest spot on HBO's hit show Girls. " + 
+				"<br>Miranda Kerr texts you frequently—it's getting pretty serious." + 
+				"<br>" + 
+				"<br>YOU WIN!",
+		"choices" : []
+	}
 };
