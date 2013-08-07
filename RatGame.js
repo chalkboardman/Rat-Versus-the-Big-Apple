@@ -12,10 +12,14 @@ Game.prototype.start = function () {
 
 	this.current_page = this.pages[0];
 	//load it up onto screen
-	this.load_event();
+	this.load_page();
 }
 
 Game.prototype.load_event = function () {
+	this.load_text();
+	this.load_buttons();
+}
+Game.prototype.load_page = function () {
 	this.load_text();
 	this.load_buttons();
 }
@@ -62,7 +66,7 @@ Game.prototype.load_buttons = function () {
 			//load new event
 			game.current_event = event.exits[index];
 			game.current_page = game.pages[(game.current_page.choices[index])];
-			game.load_event();
+			game.load_page();
 		});
 	}
 	else {
