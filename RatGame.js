@@ -1,5 +1,5 @@
 function Game() {
-	this.pages = pages;
+	this.pages = pages; //see pages.js
 	this.current_page = this.pages[0];
 }
 
