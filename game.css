@@ -1,15 +1,17 @@
-body { 	background-color: #111; 
-		color: #00ee00; 
-		margin: 0; 
-		padding: 50px 50px; 
-		font-family: "VT323", cursive; 
-		font-size: 30px;
-	}
-h1 { 	margin-top: 0; 
-		font-family: "Press Start 2P", cursive;
-		font-size: 32px; 
-		font-weight: normal;
-	}
+body { 	
+	background-color: #111; 
+	color: #00ee00; 
+	margin: 0; 
+	padding: 50px 50px; 
+	font-family: "VT323", cursive; 
+	font-size: 30px;
+}
+h1 {
+ 	margin-top: 0; 
+	font-family: "Press Start 2P", cursive;
+	font-size: 32px; 
+	font-weight: normal;
+}
 h1 a {
 	text-decoration: none;
 	color: #00ee00;
@@ -17,14 +19,40 @@ h1 a {
 h1 a:active {
 	color: #ee0000;
 }
-ul {margin: 0; padding: 0;}
-li { list-style: none; margin: 20px 0; padding: 0; }
-button { 	font-family: "VT323", cursive; 
-			color: #00ee00; 
-			background-color: #111; 
-			border: 2px outset #00ff00; 
-			font-size: 28px;
-			padding: 10px;
-		}
-button:active {color: #ee0000; border-color: #ee0000;}
+ul {
+	margin: 0; 
+	padding: 0;
+}
+li {
+	list-style: none; 
+	margin: 20px 0;
+	padding: 0;
+}
+button {
+ 	font-family: "VT323", cursive; 
+	color: #00ee00; 
+	background-color: #111; 
+	border: 2px outset #00ff00; 
+	font-size: 30px;
+	padding: 10px;
+	min-height: 44px;
+}
+button:active {
+	color: #ee0000; 
+	border-color: #ee0000;
+}
 
+/* portrait tablet and down */
+@media (max-width: 767px) { 
+	body {
+		padding: 5px 5px;
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 16px;
+	}
+	button {
+		font-size: 22px;
+		width: 100%;
+	}
+}
