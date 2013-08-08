@@ -69,8 +69,12 @@ Game.prototype.load_buttons = function () {
 }
 
 $(document).ready(function() {
-	// Handler for .ready() called.
+	//add ontouchstart event listener, so that active pseudoclass shows up on touch devices
+	$("body").on('touchstart', function () {
+		//nothing inside, the event listener is enough
+	});
+	
+	//start game
 	var game = new Game();
 	game.start();
-
 });
