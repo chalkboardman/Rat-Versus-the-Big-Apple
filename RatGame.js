@@ -8,13 +8,13 @@ Game.prototype.start = function () {
 	this.current_page = this.pages[0];
 	//load it up onto screen
 	this.load_page();
-}
+};
 
 //loads the current page
 Game.prototype.load_page = function () {
 	this.load_text();
 	this.load_buttons();
-}
+};
 
 Game.prototype.load_text = function () {
 	var page = this.current_page;
@@ -26,28 +26,28 @@ Game.prototype.load_text = function () {
 
 	//write out game text
 	$("#gametext").append(new_text);
-}
+};
 
 Game.prototype.load_buttons = function () {
 	var page = this.current_page;
 	var game = this; //so we can access game in closure
+	var button = ""; //for buttons in if statement
 
 	$("#actions").empty(); //clear out current buttons
 
-	//create button
-	var length = page.choices.length;
+	//create buttons
+	
 	//if there are choices, list them
-	if (length > 0) {
+	if (page.choices.length > 0) {
 		for (var i = 0; i < length; i++) {
 			var choice = page.choices[i];
-			var button = "<li><button type='button'>" + game.pages[choice].title + "</button></li>";
+			button = "<li><button type='button'>" + game.pages[choice].title + "</button></li>";
 			$("#actions").append(button);
 		}
 
 		//set event handlers for button
 		$("button").click(function () {
 			var index = $(this).parent().index();
-			console.log("Button index: " + index);
 
 			//load new page
 			game.current_page = game.pages[(game.current_page.choices[index])];
@@ -56,24 +56,21 @@ Game.prototype.load_buttons = function () {
 	}
 	else {
 		//otherwise, put in a start over button
-		var button = "<li><button type='button'>Start Over?</button></li>";
+		button = "<li><button type='button'>Start Over?</button></li>";
 		$("#actions").append(button);
 
 		$("button").click(function () {
 			game.start();
 		});
 	}
-
-
-
-}
+};
 
 $(document).ready(function() {
 	//add ontouchstart event listener, so that active pseudoclass shows up on touch devices
 	$("body").on('touchstart', function () {
 		//nothing inside, the event listener is enough
 	});
-	
+
 	//start game
 	var game = new Game();
 	game.start();
