@@ -45,6 +45,7 @@ button:active {
 /* portrait tablet and down */
 @media (max-width: 767px) { 
 	body {
+		-webkit-text-size-adjust: 100%;
 		padding: 5px 5px;
 		font-size: 20px;
 	}
